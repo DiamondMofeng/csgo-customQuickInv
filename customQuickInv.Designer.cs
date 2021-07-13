@@ -103,23 +103,23 @@ namespace winformLearn
             this.cSGO默认武器轮盘ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pUBG投掷物轮盘ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pUBG投掷物轮盘无C4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.保存当前方案ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.导入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_导出按钮 = new System.Windows.Forms.ToolStripMenuItem();
-            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zhcnlanguageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案3ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案4ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案5ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.保存当前方案ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.自定义方案5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.导入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_导出按钮 = new System.Windows.Forms.ToolStripMenuItem();
+            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zhcnlanguageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zhcnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -1039,6 +1039,9 @@ namespace winformLearn
             // 
             // 方案列表ToolStripMenuItem
             // 
+            this.方案列表ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.预设方案ToolStripMenuItem,
+            this.自定义方案ToolStripMenuItem});
             this.方案列表ToolStripMenuItem.Enabled = false;
             this.方案列表ToolStripMenuItem.Name = "方案列表ToolStripMenuItem";
             this.方案列表ToolStripMenuItem.Size = new System.Drawing.Size(92, 21);
@@ -1052,7 +1055,7 @@ namespace winformLearn
             this.pUBG投掷物轮盘ToolStripMenuItem,
             this.pUBG投掷物轮盘无C4ToolStripMenuItem});
             this.预设方案ToolStripMenuItem.Name = "预设方案ToolStripMenuItem";
-            this.预设方案ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
+            this.预设方案ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.预设方案ToolStripMenuItem.Text = "预设方案";
             // 
             // cSGO默认武器轮盘ToolStripMenuItem
@@ -1073,13 +1076,91 @@ namespace winformLearn
             this.pUBG投掷物轮盘无C4ToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.pUBG投掷物轮盘无C4ToolStripMenuItem.Text = "PUBG投掷物轮盘(无C4)";
             // 
+            // 自定义方案ToolStripMenuItem
+            // 
+            this.自定义方案ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.自定义方案1ToolStripMenuItem1,
+            this.自定义方案2ToolStripMenuItem1,
+            this.自定义方案3ToolStripMenuItem1,
+            this.自定义方案4ToolStripMenuItem1,
+            this.自定义方案5ToolStripMenuItem1});
+            this.自定义方案ToolStripMenuItem.Name = "自定义方案ToolStripMenuItem";
+            this.自定义方案ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案ToolStripMenuItem.Text = "自定义方案";
+            // 
+            // 自定义方案1ToolStripMenuItem1
+            // 
+            this.自定义方案1ToolStripMenuItem1.Name = "自定义方案1ToolStripMenuItem1";
+            this.自定义方案1ToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
+            this.自定义方案1ToolStripMenuItem1.Text = "自定义方案1";
+            // 
+            // 自定义方案2ToolStripMenuItem1
+            // 
+            this.自定义方案2ToolStripMenuItem1.Name = "自定义方案2ToolStripMenuItem1";
+            this.自定义方案2ToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
+            this.自定义方案2ToolStripMenuItem1.Text = "自定义方案2";
+            // 
+            // 自定义方案3ToolStripMenuItem1
+            // 
+            this.自定义方案3ToolStripMenuItem1.Name = "自定义方案3ToolStripMenuItem1";
+            this.自定义方案3ToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
+            this.自定义方案3ToolStripMenuItem1.Text = "自定义方案3";
+            // 
+            // 自定义方案4ToolStripMenuItem1
+            // 
+            this.自定义方案4ToolStripMenuItem1.Name = "自定义方案4ToolStripMenuItem1";
+            this.自定义方案4ToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
+            this.自定义方案4ToolStripMenuItem1.Text = "自定义方案4";
+            // 
+            // 自定义方案5ToolStripMenuItem1
+            // 
+            this.自定义方案5ToolStripMenuItem1.Name = "自定义方案5ToolStripMenuItem1";
+            this.自定义方案5ToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
+            this.自定义方案5ToolStripMenuItem1.Text = "自定义方案5";
+            // 
             // 保存当前方案ToolStripMenuItem
             // 
+            this.保存当前方案ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.自定义方案1ToolStripMenuItem,
+            this.自定义方案2ToolStripMenuItem,
+            this.自定义方案3ToolStripMenuItem,
+            this.自定义方案4ToolStripMenuItem,
+            this.自定义方案5ToolStripMenuItem});
             this.保存当前方案ToolStripMenuItem.Enabled = false;
             this.保存当前方案ToolStripMenuItem.Name = "保存当前方案ToolStripMenuItem";
             this.保存当前方案ToolStripMenuItem.Size = new System.Drawing.Size(128, 21);
             this.保存当前方案ToolStripMenuItem.Text = "保存当前方案至预设";
             this.保存当前方案ToolStripMenuItem.Click += new System.EventHandler(this.HaveNotDone_Click);
+            // 
+            // 自定义方案1ToolStripMenuItem
+            // 
+            this.自定义方案1ToolStripMenuItem.Name = "自定义方案1ToolStripMenuItem";
+            this.自定义方案1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案1ToolStripMenuItem.Text = "自定义方案1";
+            // 
+            // 自定义方案2ToolStripMenuItem
+            // 
+            this.自定义方案2ToolStripMenuItem.Name = "自定义方案2ToolStripMenuItem";
+            this.自定义方案2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案2ToolStripMenuItem.Text = "自定义方案2";
+            // 
+            // 自定义方案3ToolStripMenuItem
+            // 
+            this.自定义方案3ToolStripMenuItem.Name = "自定义方案3ToolStripMenuItem";
+            this.自定义方案3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案3ToolStripMenuItem.Text = "自定义方案3";
+            // 
+            // 自定义方案4ToolStripMenuItem
+            // 
+            this.自定义方案4ToolStripMenuItem.Name = "自定义方案4ToolStripMenuItem";
+            this.自定义方案4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案4ToolStripMenuItem.Text = "自定义方案4";
+            // 
+            // 自定义方案5ToolStripMenuItem
+            // 
+            this.自定义方案5ToolStripMenuItem.Name = "自定义方案5ToolStripMenuItem";
+            this.自定义方案5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案5ToolStripMenuItem.Text = "自定义方案5";
             // 
             // 导入ToolStripMenuItem
             // 
@@ -1107,92 +1188,30 @@ namespace winformLearn
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
             // zhcnlanguageToolStripMenuItem
             // 
+            this.zhcnlanguageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.zhcnToolStripMenuItem,
+            this.enusToolStripMenuItem});
+            this.zhcnlanguageToolStripMenuItem.Enabled = false;
             this.zhcnlanguageToolStripMenuItem.Name = "zhcnlanguageToolStripMenuItem";
             this.zhcnlanguageToolStripMenuItem.Size = new System.Drawing.Size(119, 21);
             this.zhcnlanguageToolStripMenuItem.Text = "Zh-Cn(Language)";
             // 
-            // 自定义方案ToolStripMenuItem
-            // 
-            this.自定义方案ToolStripMenuItem.Name = "自定义方案ToolStripMenuItem";
-            this.自定义方案ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案ToolStripMenuItem.Text = "自定义方案";
-            // 
-            // 自定义方案1ToolStripMenuItem1
-            // 
-            this.自定义方案1ToolStripMenuItem1.Name = "自定义方案1ToolStripMenuItem1";
-            this.自定义方案1ToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案1ToolStripMenuItem1.Text = "自定义方案1";
-            // 
-            // 自定义方案2ToolStripMenuItem1
-            // 
-            this.自定义方案2ToolStripMenuItem1.Name = "自定义方案2ToolStripMenuItem1";
-            this.自定义方案2ToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案2ToolStripMenuItem1.Text = "自定义方案2";
-            // 
-            // 自定义方案3ToolStripMenuItem1
-            // 
-            this.自定义方案3ToolStripMenuItem1.Name = "自定义方案3ToolStripMenuItem1";
-            this.自定义方案3ToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案3ToolStripMenuItem1.Text = "自定义方案3";
-            // 
-            // 自定义方案4ToolStripMenuItem1
-            // 
-            this.自定义方案4ToolStripMenuItem1.Name = "自定义方案4ToolStripMenuItem1";
-            this.自定义方案4ToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案4ToolStripMenuItem1.Text = "自定义方案4";
-            // 
-            // 自定义方案5ToolStripMenuItem1
-            // 
-            this.自定义方案5ToolStripMenuItem1.Name = "自定义方案5ToolStripMenuItem1";
-            this.自定义方案5ToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案5ToolStripMenuItem1.Text = "自定义方案5";
-            // 
-            // 自定义方案1ToolStripMenuItem
-            // 
-            this.自定义方案1ToolStripMenuItem.Name = "自定义方案1ToolStripMenuItem";
-            this.自定义方案1ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案1ToolStripMenuItem.Text = "自定义方案1";
-            // 
-            // 自定义方案2ToolStripMenuItem
-            // 
-            this.自定义方案2ToolStripMenuItem.Name = "自定义方案2ToolStripMenuItem";
-            this.自定义方案2ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案2ToolStripMenuItem.Text = "自定义方案2";
-            // 
-            // 自定义方案3ToolStripMenuItem
-            // 
-            this.自定义方案3ToolStripMenuItem.Name = "自定义方案3ToolStripMenuItem";
-            this.自定义方案3ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案3ToolStripMenuItem.Text = "自定义方案3";
-            // 
-            // 自定义方案4ToolStripMenuItem
-            // 
-            this.自定义方案4ToolStripMenuItem.Name = "自定义方案4ToolStripMenuItem";
-            this.自定义方案4ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案4ToolStripMenuItem.Text = "自定义方案4";
-            // 
-            // 自定义方案5ToolStripMenuItem
-            // 
-            this.自定义方案5ToolStripMenuItem.Name = "自定义方案5ToolStripMenuItem";
-            this.自定义方案5ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.自定义方案5ToolStripMenuItem.Text = "自定义方案5";
-            // 
             // zhcnToolStripMenuItem
             // 
             this.zhcnToolStripMenuItem.Name = "zhcnToolStripMenuItem";
-            this.zhcnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.zhcnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.zhcnToolStripMenuItem.Text = "zh-cn";
             // 
             // enusToolStripMenuItem
             // 
             this.enusToolStripMenuItem.Name = "enusToolStripMenuItem";
-            this.enusToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.enusToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.enusToolStripMenuItem.Text = "en-us";
             // 
             // customQuickInv
