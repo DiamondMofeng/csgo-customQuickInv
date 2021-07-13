@@ -26,6 +26,8 @@ namespace winformLearn
             //auto360模块
             public static bool isAuto360 = false;
 
+
+            public static bool isAdjustEnd = false;         //末端调整
             public static bool isAverageAngles = false;     //角度均分
 
 
@@ -188,7 +190,8 @@ namespace winformLearn
             toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
             toolTip_startAngle.SetToolTip(checkBox_isRelative, "有大bug，暂时禁用");
             toolTip_startAngle.SetToolTip(checkBox_isDynamicDrawing, "每当角度、槽位选项改变时，重新绘制轮盘");
-            //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
+            toolTip_startAngle.SetToolTip(radioButton_AdjustEnd, "若角度和未满360，则增加最后槽位的角度，使和为360" +
+                "\n若角度和超过360，仅保留第一个到达360的槽位，舍去其后面的所有槽位（令其角度为0）");
             //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
             //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
             //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
@@ -1197,9 +1200,158 @@ namespace winformLearn
             {
                 Config.isAuto360 = false;
                 radioButton_AdjustEnd.Enabled = false;
+                radioButton_AdjustEnd.Checked = false;
                 radioButton_AverageAngles.Enabled = false;
+                radioButton_AverageAngles.Checked = false;
             }
         }
+
+        private void radioButton_AdjustEnd_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton_AdjustEnd.Checked == true)
+            {
+                Config.isAdjustEnd = true;
+                Auto360_AdjustEnd();
+            }
+            else
+            {
+                Config.isAdjustEnd = false;
+            }
+        }
+
+        private void radioButton_AverageAngles_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton_AverageAngles.Checked == true)
+            {
+                Config.isAverageAngles = true;
+                Auto360_AverageAngles();
+            }
+            else
+            {
+                Config.isAverageAngles = false;
+            }
+        }
+        /////////////////////////末端调整/补全///////////////////////
+        public void Auto360_AdjustEnd()
+        {
+            //首先获取角度和，
+            //分两条路线
+            //1.角度和 < 360
+            //则对最后一项进行调整，增加其值
+            //2.角度和 > 360
+            //则找出超出360的第一个槽位，减少其值，然后令其后面的项 角度值=0
+            if (Config.isAdjustEnd == true)
+            {
+                TextBox[] angleBoxes ={
+                textBox_angle1,
+                textBox_angle2,
+                textBox_angle3,
+                textBox_angle4,
+                textBox_angle5,
+                textBox_angle6,
+                textBox_angle7,
+                textBox_angle8,
+                textBox_angle9,
+                textBox_angle10};
+
+
+                List<TextBox> enabledAngleBoxes = new List<TextBox>();
+                List<int> angleSum = new List<int>();
+
+
+                //获取angleSum
+                /*
+                for (int i=0; i<= angleBoxes - 1; i++)
+                {
+
+                }
+                */
+                int i = 1;
+                angleSum.Add(0);
+                foreach (TextBox t in angleBoxes)
+                {
+                    if (t.Enabled == true)
+                    {
+                        angleSum.Add(Convert.ToInt32(t.Text));//angleSum[i]
+                        enabledAngleBoxes.Add(t);
+                        angleSum[i] = angleSum[i - 1] + angleSum[i];
+                        i++;
+                        ;
+                    }
+                }
+                angleSum.Remove(0);
+                i = i - 2;//使i为最后一项的索引
+                
+                //已获取angleSum,对其进行分析
+                if (angleSum[i] - 360 < 0)
+                {
+                    enabledAngleBoxes[i].Text = Convert.ToString(Convert.ToInt32(enabledAngleBoxes[i].Text) + (-angleSum[i] - 360));
+                }
+                if (angleSum[i] - 360 > 0)
+                {
+                    int k = angleSum.FindIndex((j) => { return j > 360; });//找到>360的第一项的索引位置
+                    enabledAngleBoxes[k].Text = Convert.ToString(Convert.ToInt32(enabledAngleBoxes[k].Text) - (angleSum[k] - 360 ));
+                    for (; k < enabledAngleBoxes.Count - 1; k++)
+                    {
+                        enabledAngleBoxes[k+1].Text = "0";
+                    }
+                }
+                
+            }
+        }
+
+        /////////////////////////均分模式/////////////////////////////
+        /// <summary>
+        /// 若Config.isAverageAngles状态为开启，则使各槽位角度进行均分调整
+        /// </summary>
+        public void Auto360_AverageAngles()
+        {
+            if(Config.isAverageAngles == true)
+            {
+
+            
+            //先获取有几个槽位是开着的，然后进行均分。
+            TextBox[] angleBoxes ={
+                textBox_angle1,
+                textBox_angle2,
+                textBox_angle3,
+                textBox_angle4,
+                textBox_angle5,
+                textBox_angle6,
+                textBox_angle7,
+                textBox_angle8,
+                textBox_angle9,
+                textBox_angle10};
+            List<TextBox> enabledAngleBoxes = new List<TextBox>();
+            foreach (TextBox t in angleBoxes)
+            {
+                if (t.Enabled == true)
+                {
+                    enabledAngleBoxes.Add(t);
+                }
+            }
+            //则总数为 list .count
+            if (enabledAngleBoxes.Count != 7)
+            {
+                foreach (TextBox t in enabledAngleBoxes)
+                {
+                    t.Text = Convert.ToString(360 / enabledAngleBoxes.Count);
+                }
+            }
+            else
+            {
+                    enabledAngleBoxes[0].Text = "51";
+                    enabledAngleBoxes[1].Text = "52";
+                    enabledAngleBoxes[2].Text = "51";
+                    enabledAngleBoxes[3].Text = "52";
+                    enabledAngleBoxes[4].Text = "51";
+                    enabledAngleBoxes[5].Text = "52";
+                    enabledAngleBoxes[6].Text = "51";
+                }
+
+            }
+        }
+
     }
 }
 

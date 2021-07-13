@@ -895,15 +895,14 @@ namespace winformLearn
             // radioButton_AdjustEnd
             // 
             this.radioButton_AdjustEnd.AutoSize = true;
-            this.radioButton_AdjustEnd.Checked = true;
             this.radioButton_AdjustEnd.Enabled = false;
             this.radioButton_AdjustEnd.Location = new System.Drawing.Point(93, 37);
             this.radioButton_AdjustEnd.Name = "radioButton_AdjustEnd";
             this.radioButton_AdjustEnd.Size = new System.Drawing.Size(71, 16);
             this.radioButton_AdjustEnd.TabIndex = 5;
-            this.radioButton_AdjustEnd.TabStop = true;
             this.radioButton_AdjustEnd.Text = "末端对齐";
             this.radioButton_AdjustEnd.UseVisualStyleBackColor = true;
+            this.radioButton_AdjustEnd.CheckedChanged += new System.EventHandler(this.radioButton_AdjustEnd_CheckedChanged);
             // 
             // radioButton_AverageAngles
             // 
@@ -915,6 +914,7 @@ namespace winformLearn
             this.radioButton_AverageAngles.TabIndex = 5;
             this.radioButton_AverageAngles.Text = "均分模式";
             this.radioButton_AverageAngles.UseVisualStyleBackColor = true;
+            this.radioButton_AverageAngles.CheckedChanged += new System.EventHandler(this.radioButton_AverageAngles_CheckedChanged);
             // 
             // checkBox_isDynamicDrawing
             // 
