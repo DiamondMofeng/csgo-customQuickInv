@@ -1,21 +1,38 @@
 ﻿using System;
 using System.IO;
 using System.Drawing;
+using System.Collections;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 
 namespace winformLearn
 {
-    public partial class Form1 : Form
+    public partial class customQuickInv : Form
     {
         //工具类
-        public class common
+
+        //存放config变量
+        public class Config
         {
             public static bool isDynamicDrawing = true;
 
-            public static double angleSum_ = 0;
+            //public static bool angleWarning_Blue = true;//没做好，可能不做了
+            public static bool isWarningRed = true;
+            public static bool isRelative = false;
 
+
+
+
+        }
+
+        //存放其他全局变量
+        public class common
+        {
+            
+
+            public static double angleSum_ = 0;
+            
         }
 
         //public class pictureSolt
@@ -115,7 +132,7 @@ namespace winformLearn
 
 
 
-        public Form1()
+        public customQuickInv()
         {
             InitializeComponent();
         }
@@ -453,7 +470,7 @@ namespace winformLearn
 
 
             /////////////////////////写入txt部分///////////////////////
-            string path = System.Windows.Forms.Application.StartupPath + @"\temp.txt";
+            string path = System.Windows.Forms.Application.StartupPath + @"\radial_quickinventory.txt";
             //创建StreamWriter 类的实例
             StreamWriter streamWriter = new StreamWriter(path);
             streamWriter.WriteLine("\"settings\"");
@@ -567,7 +584,8 @@ namespace winformLearn
                 if (CheckMod_isSoltNotEmpty())
                 {
                     OutputMod();
-                    MessageBox.Show("导出成功！");
+                    MessageBox.Show("导出成功！已在同一目录下生成radial_quickinventory.txt" +
+                        "\n将该文件替换Counter-Strike Global Offensive\\csgo中同名文件以使用你的自定义轮盘！");
                 }
                 else
                 {
@@ -753,10 +771,13 @@ namespace winformLearn
                     Pen pen = new Pen(Color.Gray, 2);
                     //判断最终弧度是否超过360度
                     //是则笔改为红色
-                    if (fan1.startAngle + fan1.sweepAngle - (Convert.ToSingle(textBox_startAngle.Text) - 90) > 360)
+                    if (Config.isWarningRed == true)
                     {
-                        pen.Color = Color.Red;
-                        pen.Width = 5;
+                        if (fan1.startAngle + fan1.sweepAngle - (Convert.ToSingle(textBox_startAngle.Text) - 90) > 360)
+                        {
+                            pen.Color = Color.Red;
+                            pen.Width = 5;
+                        }
                     }
 
                     graphicsFans.DrawArc(pen, circleInnerRect, fan1.startAngle, fan1.sweepAngle);//画内弧
@@ -778,12 +799,28 @@ namespace winformLearn
                     graphicsFans.DrawLine(pen, pointOutEndX, pointOutEndY, pointInEndX, pointInEndY);//画终线
 
 
-                    ////////////////////////////////////////////////////////////////在midAngle放图片//////////////////////////////
+                    ////如果最终未满360，则用蓝色弧线填满剩余部分
+                    //if(Config.angleWarning_Blue == true)
+                    //{
+     
+                    //    if (fan1.startAngle + fan1.sweepAngle - (Convert.ToSingle(textBox_startAngle.Text) - 90) < 360)
+                    
+                    //    {
+                        
+                    //        pen.Color = Color.Blue;
+                        
+                    //        pen.Width = 5;
+                    
+                    //    }
+                    //}
+
+
+                    ////////////////////////////////////////////////////////////////在midAngle放图片///START///////////////////////////
 
                     //判断是否应该放图片
                     //fan1.sweepAngle=0 ;  槽位未选择物品   时不放图片
 
-                    if( fan1.sweepAngle != 0 && (slots[i].Text != "" && slots[i].Text != "----投掷物----" && slots[i].Text != "----大类----"))
+                    if ( fan1.sweepAngle != 0 && (slots[i].Text != "" && slots[i].Text != "----投掷物----" && slots[i].Text != "----大类----"))
                     {
 
                     
@@ -890,7 +927,7 @@ namespace winformLearn
         /// </summary>
         public void dynamicDrawing()
         {
-            if (common.isDynamicDrawing == true)
+            if (Config.isDynamicDrawing == true)
             {
             clearCanva(panel1);//先清空画布
             drawInnerCircle();//画内圈
@@ -950,11 +987,11 @@ namespace winformLearn
         {
             if (checkBox_isDynamicDrawing.Checked == true)
             {
-                common.isDynamicDrawing = true;
+                Config.isDynamicDrawing = true;
             }
             else
             {
-                common.isDynamicDrawing = false;
+                Config.isDynamicDrawing = false;
             }
         }
 
@@ -981,6 +1018,84 @@ namespace winformLearn
             toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
         }
 
+        private void checkBox_isWarningRed_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_isWarningRed.Checked == true)
+            {
+                Config.isWarningRed = true;
+            }
+            else
+            {
+                Config.isWarningRed = false;
+            }
+            dynamicDrawing();
+        }
+
+        private void checkBox_isRelative_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_isRelative.Checked == true)
+            {
+                Config.isRelative = true;
+            }
+            else
+            {
+                Config.isRelative = false;
+            }
+        }
+
+
+        public class FixedAngle
+        {
+            ArrayList originalAngle = new ArrayList();
+            ArrayList fixedAngleSum = new ArrayList();
+        }
+        /// <summary>
+        /// 令当前项角度与下一项角度 之和 不发生变化。若当前为最后一项，则与前一项进行调整。
+        /// </summary>
+        public void getFixedAngle()
+        {
+            FixedAngle fixedAngle1 = new FixedAngle()
+            {
+
+            };
+            TextBox[] angleBoxes ={
+                textBox_angle1,
+                textBox_angle2,
+                textBox_angle3,
+                textBox_angle4,
+                textBox_angle5,
+                textBox_angle6,
+                textBox_angle7,
+                textBox_angle8,
+                textBox_angle9,
+                textBox_angle10};
+
+            ArrayList originalAngle= new ArrayList();
+
+
+            ArrayList fixedAngleSum = new ArrayList();
+            //int i = 0;
+            int lastAngle = 0;
+            foreach ( TextBox t in angleBoxes)
+            {
+                if (t.Enabled == true)
+                {
+                    originalAngle.Add(Convert.ToInt32(t.Text));//保存每个槽位的原始角度
+
+                    int currentAngle = Convert.ToInt32(t.Text);
+                    fixedAngleSum.Add(currentAngle + lastAngle);
+                    lastAngle = currentAngle;
+                    
+                }
+            }
+            
+            
+
+            fixedAngleSum.Remove(0);
+            fixedAngleSum.Add(fixedAngleSum[fixedAngleSum.Count - 1]);//新增最后一项，其值等于原来的最后一项
+
+            
+        }
     }
 }
 
