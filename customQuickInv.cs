@@ -1043,18 +1043,20 @@ namespace winformLearn
             }
         }
 
-
+        
+        ////////////////////////////////////////////////////////////////
+        
         public class FixedAngle
         {
-            ArrayList originalAngle = new ArrayList();
-            ArrayList fixedAngleSum = new ArrayList();
+            public ArrayList originalAngle = new ArrayList();
+            public ArrayList fixedAngleSum = new ArrayList();
         }
         /// <summary>
-        /// 令当前项角度与下一项角度 之和 不发生变化。若当前为最后一项，则与前一项进行调整。
+        /// 生成一个FixedAngle类，储存各槽位原始角度以及所需角度和
         /// </summary>
         public void getFixedAngle()
         {
-            FixedAngle fixedAngle1 = new FixedAngle()
+            FixedAngle fixed1 = new FixedAngle() //初始化所需类
             {
 
             };
@@ -1070,31 +1072,72 @@ namespace winformLearn
                 textBox_angle9,
                 textBox_angle10};
 
-            ArrayList originalAngle= new ArrayList();
-
-
-            ArrayList fixedAngleSum = new ArrayList();
+            
             //int i = 0;
             int lastAngle = 0;
             foreach ( TextBox t in angleBoxes)
             {
                 if (t.Enabled == true)
                 {
-                    originalAngle.Add(Convert.ToInt32(t.Text));//保存每个槽位的原始角度
+                    fixed1.originalAngle.Add(Convert.ToInt32(t.Text));//保存每个槽位的原始角度
 
                     int currentAngle = Convert.ToInt32(t.Text);
-                    fixedAngleSum.Add(currentAngle + lastAngle);
+                    fixed1.fixedAngleSum.Add(currentAngle + lastAngle);
                     lastAngle = currentAngle;
                     
                 }
             }
-            
-            
 
-            fixedAngleSum.Remove(0);
-            fixedAngleSum.Add(fixedAngleSum[fixedAngleSum.Count - 1]);//新增最后一项，其值等于原来的最后一项
+
+
+            fixed1.fixedAngleSum.Remove(0);
+            fixed1.fixedAngleSum.Add(fixed1.fixedAngleSum[fixed1.fixedAngleSum.Count - 1]);//新增最后一项，其值等于原来的最后一项
 
             
+        }
+
+        /// <summary>
+        /// 令当前项角度与下一项角度 之和 不发生变化。若当前为最后一项，则与前一项进行调整。
+        /// </summary>
+        /// 
+        public void keepAngleSumFixed()
+        {
+            TextBox[] angleBoxes ={
+                textBox_angle1,
+                textBox_angle2,
+                textBox_angle3,
+                textBox_angle4,
+                textBox_angle5,
+                textBox_angle6,
+                textBox_angle7,
+                textBox_angle8,
+                textBox_angle9,
+                textBox_angle10};
+
+            ArrayList currentAngle = new ArrayList();
+
+            foreach (TextBox t in angleBoxes)
+            {
+                if (t.Enabled == true)
+                {
+                    currentAngle.Add(Convert.ToInt32(t.Text));//保存每个槽位的现有角度
+
+                    
+
+                }
+            }
+
+            //对比角度是否发生变化
+
+            for (int i = 0;i <= currentAngle.Count -1; i++ )
+            {
+                //if(currentAngle[i] != fixed1. )
+                {
+
+                }
+            }
+
+
         }
     }
 }
