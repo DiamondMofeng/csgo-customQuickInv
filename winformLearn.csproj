@@ -108,16 +108,22 @@
     <None Include="Resources\SMOKEGRENADE.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\BOOSTS.png" />
+    <None Include="Resources\DECOYGRENADE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FLASHBANG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UTILITY.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C4.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\DECOYGRENADE.png" />
+    <None Include="Resources\BOOSTS.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FLASHBANG.png" />
+    <None Include="Resources\GRENADES.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

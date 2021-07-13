@@ -130,6 +130,9 @@
   <data name="FLASHBANG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\FLASHBANG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GRENADES" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GRENADES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="HEGRENADE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\HEGRENADE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,5 +150,8 @@
   </data>
   <data name="SMOKEGRENADE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\SMOKEGRENADE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UTILITY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\UTILITY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

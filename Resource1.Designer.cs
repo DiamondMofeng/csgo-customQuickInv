@@ -103,6 +103,16 @@ namespace winformLearn {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap GRENADES {
+            get {
+                object obj = ResourceManager.GetObject("GRENADES", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap HEGRENADE {
             get {
                 object obj = ResourceManager.GetObject("HEGRENADE", resourceCulture);
@@ -156,6 +166,16 @@ namespace winformLearn {
         internal static System.Drawing.Bitmap SMOKEGRENADE {
             get {
                 object obj = ResourceManager.GetObject("SMOKEGRENADE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap UTILITY {
+            get {
+                object obj = ResourceManager.GetObject("UTILITY", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

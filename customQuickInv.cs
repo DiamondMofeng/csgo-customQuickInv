@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Drawing;
-using System.Collections;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -15,11 +15,18 @@ namespace winformLearn
         //存放config变量
         public class Config
         {
-            public static bool isDynamicDrawing = true;
+            public static bool isDynamicDrawing = true;     //动态绘制
 
-            //public static bool angleWarning_Blue = true;//没做好，可能不做了
-            public static bool isWarningRed = true;
-            public static bool isRelative = false;
+
+            //public static bool angleWarning_Blue = true;  //没做好，可能不做了
+            public static bool isWarningRed = true;         //超出360时红线警告
+            public static bool isKeepAngleSumFixed = false; //相对调整
+
+
+            //auto360模块
+            public static bool isAuto360 = false;
+
+            public static bool isAverageAngles = false;     //角度均分
 
 
 
@@ -29,17 +36,22 @@ namespace winformLearn
         //存放其他全局变量
         public class common
         {
-            
 
+            //用于导出检查模块中
             public static double angleSum_ = 0;
-            
+
+
+
+            //用于相对调整中
+            public static List<int> originalAngle = new List<int>();
+            public static List<int> fixedAngleSum = new List<int>();
+
+
+
+
         }
 
-        //public class pictureSolt
-        //{
-        //    public PictureBox[] pictureSolts = new PictureBox[10];
-        //
-        //}
+
 
         //槽位选项
         static void FillBoxList(ComboBox Boxname)
@@ -168,24 +180,19 @@ namespace winformLearn
 
 
 
-            /*
-            void EnumControls(Control container)
-            {
-                foreach (Control c in container.Controls)
-                {
-                    //c is the child control here
-                    EnumControls(c);
-
-                }
-            }
-
-            //调用
-            EnumControls(this);
-            */
-
-
-
-
+            /////////////////////////tooltips模块///////////////////////////////////
+            ToolTip toolTip_startAngle = new ToolTip();
+            toolTip_startAngle.AutoPopDelay = 5000;
+            toolTip_startAngle.InitialDelay = 200;
+            toolTip_startAngle.ReshowDelay = 200;
+            toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
+            toolTip_startAngle.SetToolTip(checkBox_isRelative, "有大bug，暂时禁用");
+            toolTip_startAngle.SetToolTip(checkBox_isDynamicDrawing, "每当角度、槽位选项改变时，重新绘制轮盘");
+            //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
+            //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
+            //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
+            //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
+            //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
 
 
         }
@@ -206,6 +213,8 @@ namespace winformLearn
                 textBoxName.Enabled = false;
             }
         }
+
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             SoltEnableMod(checkBox1, comboBox_slot1, trackBar_angle1, textBox_angle1);
@@ -273,35 +282,41 @@ namespace winformLearn
         {
             AngleMod_TrackBar(trackBar_startAngle, textBox_startAngle);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void textBox__startAngle_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_startAngle, textBox_startAngle);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
         private void trackBar_angle1_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle1, textBox_angle1);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void AngleBox1_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle1, textBox_angle1);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void trackBar_angle2_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle2, textBox_angle2);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void AngleBox2_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle2, textBox_angle2);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
 
@@ -309,96 +324,112 @@ namespace winformLearn
         {
             AngleMod_TrackBar(trackBar_angle3, textBox_angle3);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle3, textBox_angle3);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void trackBar_angle4_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle4, textBox_angle4);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void textBox_angle4_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle4, textBox_angle4);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void trackBar_angle5_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle5, textBox_angle5);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void textBox_angle5_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle5, textBox_angle5);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void trackBar_angle6_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle6, textBox_angle6);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void textBox_angle6_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle6, textBox_angle6);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void trackBar_angle7_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle7, textBox_angle7);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void textBox_angle7_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle7, textBox_angle7);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void trackBar_angle8_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle8, textBox_angle8);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void textBox_angle8_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle8, textBox_angle8);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void trackBar_angle9_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle9, textBox_angle9);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void textBox_angle9_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle9, textBox_angle9);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void trackBar_angle10_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle10, textBox_angle10);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
 
         private void textBox_angle10_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle10, textBox_angle10);
             dynamicDrawing();
+            keepAngleSumFixed();
         }
         ///////////////////////////////角度控件END////////////////////////////////////
 
@@ -412,8 +443,8 @@ namespace winformLearn
         //去中文以及字符
         // source: 
         //https://www.cnblogs.com/zhaogaojian/p/9207846.html
-        
-        
+
+
         /// <summary>
         /// 保留字符串中的数字及字母，舍去其他字符
         /// </summary>
@@ -554,7 +585,7 @@ namespace winformLearn
                 textBox_angle9,
                 textBox_angle10};
 
-            
+
             foreach (TextBox i in angles)
             {
                 if (Convert.ToString(i.Tag) == "angle" && i.Enabled == true)
@@ -566,7 +597,7 @@ namespace winformLearn
             common.angleSum_ = angleSum;
 
 
-            
+
             if (angleSum == 360)
 
                 return true;
@@ -802,15 +833,15 @@ namespace winformLearn
                     ////如果最终未满360，则用蓝色弧线填满剩余部分
                     //if(Config.angleWarning_Blue == true)
                     //{
-     
+
                     //    if (fan1.startAngle + fan1.sweepAngle - (Convert.ToSingle(textBox_startAngle.Text) - 90) < 360)
-                    
+
                     //    {
-                        
+
                     //        pen.Color = Color.Blue;
-                        
+
                     //        pen.Width = 5;
-                    
+
                     //    }
                     //}
 
@@ -820,82 +851,82 @@ namespace winformLearn
                     //判断是否应该放图片
                     //fan1.sweepAngle=0 ;  槽位未选择物品   时不放图片
 
-                    if ( fan1.sweepAngle != 0 && (slots[i].Text != "" && slots[i].Text != "----投掷物----" && slots[i].Text != "----大类----"))
+                    if (fan1.sweepAngle != 0 && (slots[i].Text != "" && slots[i].Text != "----投掷物----" && slots[i].Text != "----大类----"))
                     {
 
-                    
 
-                    //计算中间位置坐标
 
-                    float midPointX = center + Convert.ToSingle((circleOuterRadius + circleInnerRadius) * 0.5 * Math.Cos(Math.PI / 180 * (fan1.midAngle)));
-                    float midPointY = center + Convert.ToSingle((circleOuterRadius + circleInnerRadius) * 0.5 * Math.Sin(Math.PI / 180 * (fan1.midAngle)));
+                        //计算中间位置坐标
 
-                    //放置一个图片框
+                        float midPointX = center + Convert.ToSingle((circleOuterRadius + circleInnerRadius) * 0.5 * Math.Cos(Math.PI / 180 * (fan1.midAngle)));
+                        float midPointY = center + Convert.ToSingle((circleOuterRadius + circleInnerRadius) * 0.5 * Math.Sin(Math.PI / 180 * (fan1.midAngle)));
 
-                    PictureBox[] pictureSolts = new PictureBox[slots.Length];//声明一个图片框数组
+                        //放置一个图片框
 
-                    pictureSolts[i] = new PictureBox(); //在循环中产生新的图片框
+                        PictureBox[] pictureSolts = new PictureBox[slots.Length];//声明一个图片框数组
 
-                    //定义图片框的属性
-                    pictureSolts[i].Width = Convert.ToInt32(0.7 * (circleOuterRadius - circleInnerRadius));//暂定图片最大宽度为0.7倍扇环母线
-                    pictureSolts[i].Height = Convert.ToInt32(0.5 * pictureSolts[i].Width);     //高为宽的一半
-                    pictureSolts[i].Location = new Point(Convert.ToInt32(midPointX) - pictureSolts[i].Width / 2, Convert.ToInt32(midPointY) - pictureSolts[i].Height / 2);
-                    //pictureSolts[i].Location = new Point(Convert.ToInt32(midPointX), Convert.ToInt32(midPointY));
-                    //pictureSolts[i].BackColor = Color.Black;//debug
-                    pictureSolts[i].BackColor = Color.Transparent;
-                    pictureSolts[i].SizeMode = PictureBoxSizeMode.Zoom;
-                    panel1.Controls.Add(pictureSolts[i]);
+                        pictureSolts[i] = new PictureBox(); //在循环中产生新的图片框
 
-                    //给图片框放上图片
-                    //判断应放哪种图片
+                        //定义图片框的属性
+                        pictureSolts[i].Width = Convert.ToInt32(0.7 * (circleOuterRadius - circleInnerRadius));//暂定图片最大宽度为0.7倍扇环母线
+                        pictureSolts[i].Height = Convert.ToInt32(0.5 * pictureSolts[i].Width);     //高为宽的一半
+                        pictureSolts[i].Location = new Point(Convert.ToInt32(midPointX) - pictureSolts[i].Width / 2, Convert.ToInt32(midPointY) - pictureSolts[i].Height / 2);
+                        //pictureSolts[i].Location = new Point(Convert.ToInt32(midPointX), Convert.ToInt32(midPointY));
+                        //pictureSolts[i].BackColor = Color.Black;//debug
+                        pictureSolts[i].BackColor = Color.Transparent;
+                        pictureSolts[i].SizeMode = PictureBoxSizeMode.Zoom;
+                        panel1.Controls.Add(pictureSolts[i]);
 
-                    //从资源文件.resx中读取图片    //不用这么做
-                    //ResXResourceReader resxReader = new ResXResourceReader(System.Windows.Forms.Application.StartupPath + @"\Form1.resx");
+                        //给图片框放上图片
+                        //判断应放哪种图片
 
-                    switch (GetNumberAlpha(slots[i].Text))
-                    {
-                        case "PISTOL":
-                            pictureSolts[i].Image = Resource1.PISTOL;
+                        //从资源文件.resx中读取图片    //不用这么做
+                        //ResXResourceReader resxReader = new ResXResourceReader(System.Windows.Forms.Application.StartupPath + @"\Form1.resx");
 
-                            break;
-                        case "KNIFE":
-                            pictureSolts[i].Image = Resource1.KNIFE;
-                            break;
-                        case "RIFLE":
-                            pictureSolts[i].Image = Resource1.RIFLE;
-                            break;
-                        case "UTILITY":
-                            //pictureSolts[i].Image = Resource1.UTILITY;         //手上没有这个
-                            break;
-                        case "BOOSTS":
-                            pictureSolts[i].Image = Resource1.BOOSTS;           //用个盾图标凑合
-                            break;
-                        case "C4":
-                            pictureSolts[i].Image = Resource1.C4;
-                            break;
-                        case "GRENADES":
-                            //pictureSolts[i].Image = Resource1.GRENADES;       //手上没有这个
-                            break;
-                        case "FLASHBANG":
-                            pictureSolts[i].Image = Resource1.FLASHBANG;
-                            break;
-                        case "HEGRENADE":
-                            pictureSolts[i].Image = Resource1.HEGRENADE;
-                            break;
-                        case "SMOKEGRENADE":
-                            pictureSolts[i].Image = Resource1.SMOKEGRENADE;
-                            break;
-                        case "DECOYGRENADE":
-                            pictureSolts[i].Image = Resource1.DECOYGRENADE;
-                            break;
-                        case "MOLOTOV":
-                            pictureSolts[i].Image = Resource1.MOLOTOV;
-                            break;
+                        switch (GetNumberAlpha(slots[i].Text))
+                        {
+                            case "PISTOL":
+                                pictureSolts[i].Image = Resource1.PISTOL;
 
-                    
-                    }
+                                break;
+                            case "KNIFE":
+                                pictureSolts[i].Image = Resource1.KNIFE;
+                                break;
+                            case "RIFLE":
+                                pictureSolts[i].Image = Resource1.RIFLE;
+                                break;
+                            case "UTILITY":
+                                pictureSolts[i].Image = Resource1.UTILITY;         //手上没有这个  //有了
+                                break;
+                            case "BOOSTS":
+                                pictureSolts[i].Image = Resource1.BOOSTS;           //用个盾图标凑合 //有了
+                                break;
+                            case "C4":
+                                pictureSolts[i].Image = Resource1.C4;
+                                break;
+                            case "GRENADES":
+                                pictureSolts[i].Image = Resource1.GRENADES;       //手上没有这个 //有了
+                                break;
+                            case "FLASHBANG":
+                                pictureSolts[i].Image = Resource1.FLASHBANG;
+                                break;
+                            case "HEGRENADE":
+                                pictureSolts[i].Image = Resource1.HEGRENADE;
+                                break;
+                            case "SMOKEGRENADE":
+                                pictureSolts[i].Image = Resource1.SMOKEGRENADE;
+                                break;
+                            case "DECOYGRENADE":
+                                pictureSolts[i].Image = Resource1.DECOYGRENADE;
+                                break;
+                            case "MOLOTOV":
+                                pictureSolts[i].Image = Resource1.MOLOTOV;
+                                break;
 
-                
+
+                        }
+
+
                     }
 
 
@@ -920,7 +951,7 @@ namespace winformLearn
                 }
             }
         }
-        
+
         /////////////////////////////////外圈绘制部分结束/////////////////////////////////////////
         /// <summary>
         /// 动态绘制函数，本软件中用于绘制panel1中内容
@@ -929,9 +960,9 @@ namespace winformLearn
         {
             if (Config.isDynamicDrawing == true)
             {
-            clearCanva(panel1);//先清空画布
-            drawInnerCircle();//画内圈
-            drawFans();//画外部圆环扇形
+                clearCanva(panel1);//先清空画布
+                drawInnerCircle();//画内圈
+                drawFans();//画外部圆环扇形
             }
 
         }
@@ -945,7 +976,7 @@ namespace winformLearn
         {
             drawFans();
         }
-        
+
         //debug按钮
         private void button3_Click(object sender, EventArgs e)
         {
@@ -965,14 +996,15 @@ namespace winformLearn
             //panelName.Invalidate();//不用这个方法了，非常容易引起问题
             //仅循环清除图片而不循环清除绘图区，防止瞎眼和图形错误
             clearPictures();
-            void clearPictures(){
-            foreach (Control c in panelName.Controls)
+            void clearPictures()
+            {
+                foreach (Control c in panelName.Controls)
                 {
                     //if(c is PictureBox)
                     //{
-                        panelName.Controls.Remove(c);
+                    panelName.Controls.Remove(c);
 
-                        clearPictures();//再来一次，防止清不干净
+                    clearPictures();//再来一次，防止清不干净
                     //}
                 }
             }
@@ -999,8 +1031,8 @@ namespace winformLearn
         {
             MessageBox.Show("感谢使用本软件！" +
                 "\n本软件仅供本C#初学者练手，如引起使用过程中的不舒服，尽情谅解" +
-                "\nCSGO-customWeaponWheelVisuableEditor Version 0.8.0" +               
-                "\nWelcome to visit my website at httpS://blog.mofengfeng.com  !"+
+                "\nCSGO-customWeaponWheelVisuableEditor Version 0.8.0" +
+                "\nWelcome to visit my website at httpS://blog.mofengfeng.com  !" +
                 "\nCreated By: Mofeng");
         }
 
@@ -1009,14 +1041,7 @@ namespace winformLearn
             MessageBox.Show("还没有做好！\n或许并用不到这些功能......");
         }
 
-        private void MouseHover_HelpOfStartAngle(object sender, EventArgs e)
-        {
-            ToolTip toolTip_startAngle = new ToolTip();
-            toolTip_startAngle.AutoPopDelay = 5000;
-            toolTip_startAngle.InitialDelay = 200;
-            toolTip_startAngle.ReshowDelay = 200;
-            toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
-        }
+
 
         private void checkBox_isWarningRed_CheckedChanged(object sender, EventArgs e)
         {
@@ -1035,31 +1060,25 @@ namespace winformLearn
         {
             if (checkBox_isRelative.Checked == true)
             {
-                Config.isRelative = true;
+                Config.isKeepAngleSumFixed = true;
+                getFixedAngle();//开启时储存当前各角度信息
             }
             else
             {
-                Config.isRelative = false;
+                Config.isKeepAngleSumFixed = false;
             }
         }
 
-        
-        ////////////////////////////////////////////////////////////////
-        
-        public class FixedAngle
-        {
-            public ArrayList originalAngle = new ArrayList();
-            public ArrayList fixedAngleSum = new ArrayList();
-        }
+
+        /////////////////////////////////相对调整模块//START///////////////////////////////////////////////
+
+
         /// <summary>
         /// 生成一个FixedAngle类，储存各槽位原始角度以及所需角度和
         /// </summary>
         public void getFixedAngle()
         {
-            FixedAngle fixed1 = new FixedAngle() //初始化所需类
-            {
 
-            };
             TextBox[] angleBoxes ={
                 textBox_angle1,
                 textBox_angle2,
@@ -1072,37 +1091,41 @@ namespace winformLearn
                 textBox_angle9,
                 textBox_angle10};
 
-            
+
             //int i = 0;
             int lastAngle = 0;
-            foreach ( TextBox t in angleBoxes)
+            foreach (TextBox t in angleBoxes)
             {
                 if (t.Enabled == true)
                 {
-                    fixed1.originalAngle.Add(Convert.ToInt32(t.Text));//保存每个槽位的原始角度
+                    common.originalAngle.Add(Convert.ToInt32(t.Text));//保存每个槽位的原始角度
 
                     int currentAngle = Convert.ToInt32(t.Text);
-                    fixed1.fixedAngleSum.Add(currentAngle + lastAngle);
+                    common.fixedAngleSum.Add(currentAngle + lastAngle);
                     lastAngle = currentAngle;
-                    
+
                 }
             }
 
 
 
-            fixed1.fixedAngleSum.Remove(0);
-            fixed1.fixedAngleSum.Add(fixed1.fixedAngleSum[fixed1.fixedAngleSum.Count - 1]);//新增最后一项，其值等于原来的最后一项
+            common.fixedAngleSum.RemoveAt(0);
+            common.fixedAngleSum.Add(common.fixedAngleSum[common.fixedAngleSum.Count - 1]);//新增最后一项，其值等于原来的最后一项
 
-            
+
         }
 
         /// <summary>
         /// 令当前项角度与下一项角度 之和 不发生变化。若当前为最后一项，则与前一项进行调整。
         /// </summary>
-        /// 
         public void keepAngleSumFixed()
         {
-            TextBox[] angleBoxes ={
+
+            if (Config.isKeepAngleSumFixed == true)
+            {
+
+
+                TextBox[] angleBoxes ={
                 textBox_angle1,
                 textBox_angle2,
                 textBox_angle3,
@@ -1114,30 +1137,68 @@ namespace winformLearn
                 textBox_angle9,
                 textBox_angle10};
 
-            ArrayList currentAngle = new ArrayList();
+                List<int> currentAngle = new List<int>();
+                List<TextBox> activeAngleBoxes = new List<TextBox>();
 
-            foreach (TextBox t in angleBoxes)
-            {
-                if (t.Enabled == true)
+                foreach (TextBox t in angleBoxes)
                 {
-                    currentAngle.Add(Convert.ToInt32(t.Text));//保存每个槽位的现有角度
+                    if (t.Enabled == true)
+                    {
+                        currentAngle.Add(Convert.ToInt32(t.Text));//保存每个槽位的现有角度
 
-                    
+                        activeAngleBoxes.Add(t);//生成active角度文本框List
+
+
+                    }
+                }
+
+                //对比角度是否发生变化
+
+                for (int i = 0; i <= currentAngle.Count - 1; i++)
+                {
+                    if (currentAngle[i] != common.originalAngle[i])
+                    {
+                        if (i < currentAngle.Count - 1)
+                        {
+                            activeAngleBoxes[i + 1].Text = Convert.ToString(common.fixedAngleSum[i] - currentAngle[i]);
+                            getFixedAngle();//重获各角度信息
+                            break;
+                        }
+                        if (i == currentAngle.Count - 1)//末位则对前一项进行调整
+                        {
+                            activeAngleBoxes[i - 1].Text = Convert.ToString(common.fixedAngleSum[i] - currentAngle[i]);
+                            getFixedAngle();//重获各角度信息
+                            break;
+                        }
+
+                    }
 
                 }
+
+
+
             }
+        }
 
-            //对比角度是否发生变化
 
-            for (int i = 0;i <= currentAngle.Count -1; i++ )
+        /////////////////////////////////相对调整模块//END///////////////////////////////////////////////
+
+
+        //自动调整360//
+        private void checkBox_isAuto360_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_isAuto360.Checked == true)
             {
-                //if(currentAngle[i] != fixed1. )
-                {
-
-                }
+                Config.isAuto360 = true;
+                radioButton_AdjustEnd.Enabled = true;
+                radioButton_AverageAngles.Enabled = true;
             }
-
-
+            else
+            {
+                Config.isAuto360 = false;
+                radioButton_AdjustEnd.Enabled = false;
+                radioButton_AverageAngles.Enabled = false;
+            }
         }
     }
 }
