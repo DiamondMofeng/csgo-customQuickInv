@@ -30,6 +30,10 @@ namespace winformLearn
             public static bool isAdjustEnd = false;         //末端调整
             public static bool isAverageAngles = false;     //角度均分
 
+            //自动重绘事件
+
+            public static bool isRePaint = true;
+
 
 
 
@@ -76,7 +80,11 @@ namespace winformLearn
             return;//结束当前函数
         }
         //TrackBar模块
-        //令滑动条的值=文本框内容
+        /// <summary>
+        /// 放置于TrackBar的功能下，令 所指定的 文本框内容 为 所指定的 滑动条的值所转换成的字符串
+        /// </summary>
+        /// <param name="TrackBarName"></param>
+        /// <param name="TextBoxName"></param>
         public static void AngleMod_TrackBar(TrackBar TrackBarName, TextBox TextBoxName)
         {
             TextBoxName.Text = TrackBarName.Value.ToString();
@@ -84,7 +92,11 @@ namespace winformLearn
 
         }
         //TextBox模块
-        //令文本框内容=滑动条的值,同时最少显示0
+        /// <summary>
+        /// 放置于TextBox的功能下，令 所指定的 滑动条的值 为 经过处理后 的 所指定的 文本框内容所转换成的int32.
+        /// </summary>
+        /// <param name="TrackBarName"></param>
+        /// <param name="TextBoxName"></param>
         public static void AngleMod_TextBox(TrackBar TrackBarName, TextBox TextBoxName)
         {
             //TrackBarName.Value = TextBoxName.Text.Convert.ToDouble();
@@ -179,17 +191,20 @@ namespace winformLearn
 
             /////////////////////////tooltips模块///////////////////////////////////
             ToolTip toolTip_startAngle = new ToolTip();
-            toolTip_startAngle.AutoPopDelay = 5000;
+            toolTip_startAngle.AutoPopDelay = 10000;
             toolTip_startAngle.InitialDelay = 200;
             toolTip_startAngle.ReshowDelay = 200;
             toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
-            toolTip_startAngle.SetToolTip(checkBox_isRelative, "有大bug，暂时禁用" +
-                "\n令当前项角度与下一项角度 之和 不发生变化。若当前为最后一项，则与前一项进行调整");
+            toolTip_startAngle.SetToolTip(checkBox_isRelative, "暂时没发现有大bug，若发生错误请不要使用" +
+                "\n令当前项角度与下一项角度 之和 不发生变化。若当前为最后一项，则与前一项进行调整" +
+                "\n若调整后，被动调整项数值将小于0，则本次主动调整无效，对于细小调节请手动输入数字");
             toolTip_startAngle.SetToolTip(checkBox_isDynamicDrawing, "每当角度、槽位选项改变时，重新绘制轮盘");
             toolTip_startAngle.SetToolTip(radioButton_AdjustEnd, "若角度和未满360，则增加最后槽位的角度，使和为360" +
                 "\n若角度和超过360，仅保留第一个到达360的槽位，舍去其后面的所有槽位（令其角度为0）");
-            //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
-            //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
+            toolTip_startAngle.SetToolTip(label_MaxAngle, "调整各槽位最大角度" +
+                "\n当相对调整和自动调整360启用时，禁用本功能");
+            toolTip_startAngle.SetToolTip(checkBox_AutoRePaint, "开启本项可防止轮盘图形意外消失，但会减慢绘图速度" +
+                "\n关闭本项可增加绘图速度，但轮盘图形可能会意外消失");
             //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
             //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
 
@@ -1122,11 +1137,16 @@ namespace winformLearn
                 Config.isKeepAngleSumFixed = true;
 
                 getFixedAngle();//开启时储存当前各角度信息
+
+
+
             }
             else
             {
                 Config.isKeepAngleSumFixed = false;
+
             }
+            enOrDisMaxAgnle();
         }
 
 
@@ -1275,6 +1295,7 @@ namespace winformLearn
                 radioButton_AverageAngles.Enabled = false;
                 radioButton_AverageAngles.Checked = false;
             }
+            enOrDisMaxAgnle();
         }
 
         private void radioButton_AdjustEnd_CheckedChanged(object sender, EventArgs e)
@@ -1434,11 +1455,70 @@ namespace winformLearn
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            //drawLinesWhenPaint();//解决了外框消失的问题，但会二次放置图片，显著拖慢速度 ,需要把图片放置从drawFans函数中抽离
-            void drawLinesWhenPaint()
+            if (Config.isRePaint)
+            {
+            
+                RePaint();//解决了外框消失的问题，但会二次放置图片，显著拖慢速度 ,需要把图片放置从drawFans函数中抽离
+           
+            }
+            void RePaint()
             {
                 drawFans();
                 drawInnerCircle();
+            }
+        }
+
+        private void trackBar_MaxAngle_Scroll(object sender, EventArgs e)
+        {
+            AngleMod_TrackBar(trackBar_MaxAngle, textBox_MaxAngle) ;
+        }
+
+        private void textBox_MaxAngle_TextChanged(object sender, EventArgs e)
+        {
+            AngleMod_TextBox(trackBar_MaxAngle, textBox_MaxAngle);
+            TrackBar[] trackBars_Angle =
+            {
+                trackBar_angle1,
+                trackBar_angle2,
+                trackBar_angle3,
+                trackBar_angle4,
+                trackBar_angle5,
+                trackBar_angle6,
+                trackBar_angle7,
+                trackBar_angle8,
+                trackBar_angle9,
+                trackBar_angle10
+            };
+            foreach (TrackBar t in trackBars_Angle)
+            {
+                t.Maximum = trackBar_MaxAngle.Value;
+            }
+            
+        }
+        public void enOrDisMaxAgnle()
+        {
+            if (checkBox_isAuto360.Checked || checkBox_isRelative.Checked)
+            {
+                trackBar_MaxAngle.Enabled = false;
+                textBox_MaxAngle.Enabled = false;
+            }
+            else
+            {
+                trackBar_MaxAngle.Enabled = true;
+                textBox_MaxAngle.Enabled = true;
+            }
+        }
+
+        private void checkBox_AutoRePaint_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_AutoRePaint.Checked == true)
+            {
+                Config.isRePaint = true;
+                dynamicDrawing();
+            }
+            else
+            {
+                Config.isRePaint = false;
             }
             
         }

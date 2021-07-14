@@ -122,6 +122,11 @@ namespace winformLearn
             this.zhcnlanguageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zhcnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.trackBar_MaxAngle = new System.Windows.Forms.TrackBar();
+            this.textBox_MaxAngle = new System.Windows.Forms.TextBox();
+            this.label_MaxAngle = new System.Windows.Forms.Label();
+            this.label_debugArea = new System.Windows.Forms.Label();
+            this.checkBox_AutoRePaint = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -145,6 +150,7 @@ namespace winformLearn
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_MaxAngle)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -877,12 +883,16 @@ namespace winformLearn
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.checkBox_AutoRePaint);
             this.tabPage1.Controls.Add(this.radioButton_AdjustEnd);
             this.tabPage1.Controls.Add(this.radioButton_AverageAngles);
             this.tabPage1.Controls.Add(this.checkBox_isDynamicDrawing);
             this.tabPage1.Controls.Add(this.checkBox_isWarningRed);
             this.tabPage1.Controls.Add(this.checkBox_isRelative);
             this.tabPage1.Controls.Add(this.checkBox_isAuto360);
+            this.tabPage1.Controls.Add(this.trackBar_MaxAngle);
+            this.tabPage1.Controls.Add(this.textBox_MaxAngle);
+            this.tabPage1.Controls.Add(this.label_MaxAngle);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
@@ -936,7 +946,7 @@ namespace winformLearn
             this.checkBox_isWarningRed.AutoSize = true;
             this.checkBox_isWarningRed.Checked = true;
             this.checkBox_isWarningRed.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_isWarningRed.Location = new System.Drawing.Point(310, 15);
+            this.checkBox_isWarningRed.Location = new System.Drawing.Point(16, 99);
             this.checkBox_isWarningRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox_isWarningRed.Name = "checkBox_isWarningRed";
             this.checkBox_isWarningRed.Size = new System.Drawing.Size(120, 16);
@@ -972,6 +982,7 @@ namespace winformLearn
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label_debugArea);
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.button1);
@@ -979,7 +990,7 @@ namespace winformLearn
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Size = new System.Drawing.Size(565, 123);
+            this.tabPage2.Size = new System.Drawing.Size(565, 122);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "调试区";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1214,6 +1225,62 @@ namespace winformLearn
             this.enusToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.enusToolStripMenuItem.Text = "en-us";
             // 
+            // trackBar_MaxAngle
+            // 
+            this.trackBar_MaxAngle.BackColor = System.Drawing.Color.White;
+            this.trackBar_MaxAngle.Location = new System.Drawing.Point(347, 37);
+            this.trackBar_MaxAngle.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_MaxAngle.Maximum = 360;
+            this.trackBar_MaxAngle.Minimum = 1;
+            this.trackBar_MaxAngle.Name = "trackBar_MaxAngle";
+            this.trackBar_MaxAngle.Size = new System.Drawing.Size(136, 45);
+            this.trackBar_MaxAngle.TabIndex = 3;
+            this.trackBar_MaxAngle.Value = 360;
+            this.trackBar_MaxAngle.Scroll += new System.EventHandler(this.trackBar_MaxAngle_Scroll);
+            // 
+            // textBox_MaxAngle
+            // 
+            this.textBox_MaxAngle.Location = new System.Drawing.Point(451, 12);
+            this.textBox_MaxAngle.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_MaxAngle.Name = "textBox_MaxAngle";
+            this.textBox_MaxAngle.Size = new System.Drawing.Size(32, 21);
+            this.textBox_MaxAngle.TabIndex = 5;
+            this.textBox_MaxAngle.Tag = "angle";
+            this.textBox_MaxAngle.Text = "360";
+            this.textBox_MaxAngle.TextChanged += new System.EventHandler(this.textBox_MaxAngle_TextChanged);
+            // 
+            // label_MaxAngle
+            // 
+            this.label_MaxAngle.AutoSize = true;
+            this.label_MaxAngle.Location = new System.Drawing.Point(345, 16);
+            this.label_MaxAngle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_MaxAngle.Name = "label_MaxAngle";
+            this.label_MaxAngle.Size = new System.Drawing.Size(89, 12);
+            this.label_MaxAngle.TabIndex = 2;
+            this.label_MaxAngle.Text = "各槽位最大角度";
+            // 
+            // label_debugArea
+            // 
+            this.label_debugArea.AutoSize = true;
+            this.label_debugArea.Location = new System.Drawing.Point(16, 13);
+            this.label_debugArea.Name = "label_debugArea";
+            this.label_debugArea.Size = new System.Drawing.Size(137, 12);
+            this.label_debugArea.TabIndex = 3;
+            this.label_debugArea.Text = "本区域仅供作者调试使用";
+            // 
+            // checkBox_AutoRePaint
+            // 
+            this.checkBox_AutoRePaint.AutoSize = true;
+            this.checkBox_AutoRePaint.Checked = true;
+            this.checkBox_AutoRePaint.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_AutoRePaint.Location = new System.Drawing.Point(168, 99);
+            this.checkBox_AutoRePaint.Name = "checkBox_AutoRePaint";
+            this.checkBox_AutoRePaint.Size = new System.Drawing.Size(72, 16);
+            this.checkBox_AutoRePaint.TabIndex = 6;
+            this.checkBox_AutoRePaint.Text = "自动重绘";
+            this.checkBox_AutoRePaint.UseVisualStyleBackColor = true;
+            this.checkBox_AutoRePaint.CheckedChanged += new System.EventHandler(this.checkBox_AutoRePaint_CheckedChanged);
+            // 
             // customQuickInv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1250,8 +1317,10 @@ namespace winformLearn
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_MaxAngle)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1351,5 +1420,10 @@ namespace winformLearn
         private System.Windows.Forms.RadioButton radioButton_AverageAngles;
         private System.Windows.Forms.CheckBox checkBox_isRelative;
         private System.Windows.Forms.CheckBox checkBox_isWarningRed;
+        private System.Windows.Forms.TrackBar trackBar_MaxAngle;
+        private System.Windows.Forms.TextBox textBox_MaxAngle;
+        private System.Windows.Forms.Label label_MaxAngle;
+        private System.Windows.Forms.Label label_debugArea;
+        private System.Windows.Forms.CheckBox checkBox_AutoRePaint;
     }
 }
