@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("winformLearn")]
+[assembly: AssemblyTitle("csgo-QuickInventoryVisuableEditor")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("winformLearn")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCompany("Mofengfeng.com")]
+[assembly: AssemblyProduct("csgo-QuickInventoryVisuableEditor")]
+[assembly: AssemblyCopyright("Copyright ©2021 Mofeng")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

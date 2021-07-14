@@ -1278,9 +1278,9 @@ namespace winformLearn
             this.checkBox_AutoRePaint.Cursor = System.Windows.Forms.Cursors.Help;
             this.checkBox_AutoRePaint.Location = new System.Drawing.Point(168, 99);
             this.checkBox_AutoRePaint.Name = "checkBox_AutoRePaint";
-            this.checkBox_AutoRePaint.Size = new System.Drawing.Size(72, 16);
+            this.checkBox_AutoRePaint.Size = new System.Drawing.Size(108, 16);
             this.checkBox_AutoRePaint.TabIndex = 6;
-            this.checkBox_AutoRePaint.Text = "自动重绘";
+            this.checkBox_AutoRePaint.Text = "重载时自动重绘";
             this.checkBox_AutoRePaint.UseVisualStyleBackColor = true;
             this.checkBox_AutoRePaint.CheckedChanged += new System.EventHandler(this.checkBox_AutoRePaint_CheckedChanged);
             // 
@@ -1293,7 +1293,7 @@ namespace winformLearn
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "customQuickInv";
-            this.Text = "Form1";
+            this.Text = "CSGO武器轮盘可视化编辑器 v0.9.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();

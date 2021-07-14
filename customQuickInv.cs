@@ -1096,7 +1096,7 @@ namespace winformLearn
         {
             MessageBox.Show("感谢使用本软件！" +
                 "\n本软件仅供本C#初学者练手，如引起使用过程中的不舒服，尽情谅解" +
-                "\nCSGO-customWeaponWheelVisuableEditor Version 0.8.6" +
+                "\nCSGO-customWeaponWheelVisuableEditor Version 0.9.1" +
                 "\nWelcome to visit my website at httpS://blog.mofengfeng.com  !" +
                 "\nCreated By: Mofeng");
         }
