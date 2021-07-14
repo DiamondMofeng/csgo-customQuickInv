@@ -151,7 +151,7 @@ namespace winformLearn
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -210,14 +210,13 @@ namespace winformLearn
             this.splitContainer1.Panel1.Controls.Add(this.comboBox_slot7);
             this.splitContainer1.Panel1.Controls.Add(this.comboBox_slot6);
             this.splitContainer1.Panel1.Controls.Add(this.comboBox_slot5);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Panel2.Controls.Add(this.menuStrip1);
             this.splitContainer1.Size = new System.Drawing.Size(870, 614);
-            this.splitContainer1.SplitterDistance = 295;
+            this.splitContainer1.SplitterDistance = 294;
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -225,7 +224,7 @@ namespace winformLearn
             // 
             this.checkBox10.AutoSize = true;
             this.checkBox10.Location = new System.Drawing.Point(23, 718);
-            this.checkBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(60, 16);
             this.checkBox10.TabIndex = 6;
@@ -237,7 +236,7 @@ namespace winformLearn
             // 
             this.checkBox9.AutoSize = true;
             this.checkBox9.Location = new System.Drawing.Point(22, 646);
-            this.checkBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(54, 16);
             this.checkBox9.TabIndex = 6;
@@ -249,7 +248,7 @@ namespace winformLearn
             // 
             this.checkBox8.AutoSize = true;
             this.checkBox8.Location = new System.Drawing.Point(23, 573);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(54, 16);
             this.checkBox8.TabIndex = 6;
@@ -263,7 +262,7 @@ namespace winformLearn
             this.checkBox7.Checked = true;
             this.checkBox7.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox7.Location = new System.Drawing.Point(23, 500);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(54, 16);
             this.checkBox7.TabIndex = 6;
@@ -277,7 +276,7 @@ namespace winformLearn
             this.checkBox6.Checked = true;
             this.checkBox6.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox6.Location = new System.Drawing.Point(23, 427);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(54, 16);
             this.checkBox6.TabIndex = 6;
@@ -291,7 +290,7 @@ namespace winformLearn
             this.checkBox3.Checked = true;
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Location = new System.Drawing.Point(23, 202);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(54, 16);
             this.checkBox3.TabIndex = 6;
@@ -305,7 +304,7 @@ namespace winformLearn
             this.checkBox5.Checked = true;
             this.checkBox5.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox5.Location = new System.Drawing.Point(23, 354);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(54, 16);
             this.checkBox5.TabIndex = 6;
@@ -319,7 +318,7 @@ namespace winformLearn
             this.checkBox4.Checked = true;
             this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox4.Location = new System.Drawing.Point(23, 275);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(54, 16);
             this.checkBox4.TabIndex = 6;
@@ -333,7 +332,7 @@ namespace winformLearn
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(23, 130);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(54, 16);
             this.checkBox2.TabIndex = 6;
@@ -347,7 +346,7 @@ namespace winformLearn
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Location = new System.Drawing.Point(23, 56);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(54, 16);
             this.checkBox1.TabIndex = 6;
@@ -358,7 +357,7 @@ namespace winformLearn
             // trackBar_angle3
             // 
             this.trackBar_angle3.Location = new System.Drawing.Point(52, 224);
-            this.trackBar_angle3.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_angle3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_angle3.Maximum = 360;
             this.trackBar_angle3.Name = "trackBar_angle3";
             this.trackBar_angle3.Size = new System.Drawing.Size(131, 45);
@@ -370,7 +369,7 @@ namespace winformLearn
             // 
             this.textBox_angle10.Enabled = false;
             this.textBox_angle10.Location = new System.Drawing.Point(199, 742);
-            this.textBox_angle10.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_angle10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_angle10.Name = "textBox_angle10";
             this.textBox_angle10.Size = new System.Drawing.Size(32, 21);
             this.textBox_angle10.TabIndex = 5;
@@ -382,7 +381,7 @@ namespace winformLearn
             // 
             this.textBox_angle9.Enabled = false;
             this.textBox_angle9.Location = new System.Drawing.Point(199, 670);
-            this.textBox_angle9.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_angle9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_angle9.Name = "textBox_angle9";
             this.textBox_angle9.Size = new System.Drawing.Size(32, 21);
             this.textBox_angle9.TabIndex = 5;
@@ -394,7 +393,7 @@ namespace winformLearn
             // 
             this.textBox_angle8.Enabled = false;
             this.textBox_angle8.Location = new System.Drawing.Point(199, 597);
-            this.textBox_angle8.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_angle8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_angle8.Name = "textBox_angle8";
             this.textBox_angle8.Size = new System.Drawing.Size(32, 21);
             this.textBox_angle8.TabIndex = 5;
@@ -406,7 +405,7 @@ namespace winformLearn
             // 
             this.comboBox_slot1.FormattingEnabled = true;
             this.comboBox_slot1.Location = new System.Drawing.Point(88, 54);
-            this.comboBox_slot1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_slot1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_slot1.Name = "comboBox_slot1";
             this.comboBox_slot1.Size = new System.Drawing.Size(143, 20);
             this.comboBox_slot1.TabIndex = 1;
@@ -417,7 +416,7 @@ namespace winformLearn
             // textBox_angle7
             // 
             this.textBox_angle7.Location = new System.Drawing.Point(199, 524);
-            this.textBox_angle7.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_angle7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_angle7.Name = "textBox_angle7";
             this.textBox_angle7.Size = new System.Drawing.Size(32, 21);
             this.textBox_angle7.TabIndex = 5;
@@ -428,7 +427,7 @@ namespace winformLearn
             // textBox_angle6
             // 
             this.textBox_angle6.Location = new System.Drawing.Point(199, 451);
-            this.textBox_angle6.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_angle6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_angle6.Name = "textBox_angle6";
             this.textBox_angle6.Size = new System.Drawing.Size(32, 21);
             this.textBox_angle6.TabIndex = 5;
@@ -439,7 +438,7 @@ namespace winformLearn
             // textBox_angle3
             // 
             this.textBox_angle3.Location = new System.Drawing.Point(199, 226);
-            this.textBox_angle3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_angle3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_angle3.Name = "textBox_angle3";
             this.textBox_angle3.Size = new System.Drawing.Size(32, 21);
             this.textBox_angle3.TabIndex = 5;
@@ -450,7 +449,7 @@ namespace winformLearn
             // textBox_angle5
             // 
             this.textBox_angle5.Location = new System.Drawing.Point(199, 378);
-            this.textBox_angle5.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_angle5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_angle5.Name = "textBox_angle5";
             this.textBox_angle5.Size = new System.Drawing.Size(32, 21);
             this.textBox_angle5.TabIndex = 5;
@@ -471,7 +470,7 @@ namespace winformLearn
             // textBox_angle4
             // 
             this.textBox_angle4.Location = new System.Drawing.Point(199, 306);
-            this.textBox_angle4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_angle4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_angle4.Name = "textBox_angle4";
             this.textBox_angle4.Size = new System.Drawing.Size(32, 21);
             this.textBox_angle4.TabIndex = 5;
@@ -482,7 +481,7 @@ namespace winformLearn
             // textBox_angle2
             // 
             this.textBox_angle2.Location = new System.Drawing.Point(199, 154);
-            this.textBox_angle2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_angle2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_angle2.Name = "textBox_angle2";
             this.textBox_angle2.Size = new System.Drawing.Size(32, 21);
             this.textBox_angle2.TabIndex = 5;
@@ -494,7 +493,7 @@ namespace winformLearn
             // 
             this.trackBar_angle10.Enabled = false;
             this.trackBar_angle10.Location = new System.Drawing.Point(52, 740);
-            this.trackBar_angle10.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_angle10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_angle10.Maximum = 360;
             this.trackBar_angle10.Name = "trackBar_angle10";
             this.trackBar_angle10.Size = new System.Drawing.Size(136, 45);
@@ -505,7 +504,7 @@ namespace winformLearn
             // 
             this.trackBar_angle9.Enabled = false;
             this.trackBar_angle9.Location = new System.Drawing.Point(52, 667);
-            this.trackBar_angle9.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_angle9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_angle9.Maximum = 360;
             this.trackBar_angle9.Name = "trackBar_angle9";
             this.trackBar_angle9.Size = new System.Drawing.Size(136, 45);
@@ -527,7 +526,7 @@ namespace winformLearn
             // 
             this.trackBar_angle8.Enabled = false;
             this.trackBar_angle8.Location = new System.Drawing.Point(52, 594);
-            this.trackBar_angle8.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_angle8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_angle8.Maximum = 360;
             this.trackBar_angle8.Name = "trackBar_angle8";
             this.trackBar_angle8.Size = new System.Drawing.Size(136, 45);
@@ -537,7 +536,7 @@ namespace winformLearn
             // trackBar_angle7
             // 
             this.trackBar_angle7.Location = new System.Drawing.Point(52, 522);
-            this.trackBar_angle7.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_angle7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_angle7.Maximum = 360;
             this.trackBar_angle7.Name = "trackBar_angle7";
             this.trackBar_angle7.Size = new System.Drawing.Size(136, 45);
@@ -549,7 +548,7 @@ namespace winformLearn
             // 
             this.comboBox_slot2.FormattingEnabled = true;
             this.comboBox_slot2.Location = new System.Drawing.Point(88, 128);
-            this.comboBox_slot2.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_slot2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_slot2.Name = "comboBox_slot2";
             this.comboBox_slot2.Size = new System.Drawing.Size(143, 20);
             this.comboBox_slot2.TabIndex = 1;
@@ -560,7 +559,7 @@ namespace winformLearn
             // trackBar_angle6
             // 
             this.trackBar_angle6.Location = new System.Drawing.Point(52, 449);
-            this.trackBar_angle6.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_angle6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_angle6.Maximum = 360;
             this.trackBar_angle6.Name = "trackBar_angle6";
             this.trackBar_angle6.Size = new System.Drawing.Size(136, 45);
@@ -571,7 +570,7 @@ namespace winformLearn
             // trackBar_angle5
             // 
             this.trackBar_angle5.Location = new System.Drawing.Point(52, 376);
-            this.trackBar_angle5.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_angle5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_angle5.Maximum = 360;
             this.trackBar_angle5.Name = "trackBar_angle5";
             this.trackBar_angle5.Size = new System.Drawing.Size(136, 45);
@@ -583,18 +582,18 @@ namespace winformLearn
             // 
             this.comboBox_slot3.FormattingEnabled = true;
             this.comboBox_slot3.Location = new System.Drawing.Point(88, 201);
-            this.comboBox_slot3.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_slot3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_slot3.Name = "comboBox_slot3";
             this.comboBox_slot3.Size = new System.Drawing.Size(143, 20);
             this.comboBox_slot3.TabIndex = 1;
             this.comboBox_slot3.Tag = "slots";
-            this.comboBox_slot3.Text = "KNIFE近战武器";
+            this.comboBox_slot3.Text = "KNIFE近战武器(包括电击枪)";
             this.comboBox_slot3.TextChanged += new System.EventHandler(this.comboBox_slot10_TextChanged);
             // 
             // trackBar_angle4
             // 
             this.trackBar_angle4.Location = new System.Drawing.Point(52, 303);
-            this.trackBar_angle4.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_angle4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_angle4.Maximum = 360;
             this.trackBar_angle4.Name = "trackBar_angle4";
             this.trackBar_angle4.Size = new System.Drawing.Size(136, 45);
@@ -616,7 +615,7 @@ namespace winformLearn
             // 
             this.comboBox_slot4.FormattingEnabled = true;
             this.comboBox_slot4.Location = new System.Drawing.Point(88, 274);
-            this.comboBox_slot4.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_slot4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_slot4.Name = "comboBox_slot4";
             this.comboBox_slot4.Size = new System.Drawing.Size(143, 20);
             this.comboBox_slot4.TabIndex = 1;
@@ -637,7 +636,7 @@ namespace winformLearn
             // trackBar_angle2
             // 
             this.trackBar_angle2.Location = new System.Drawing.Point(52, 151);
-            this.trackBar_angle2.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_angle2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_angle2.Maximum = 360;
             this.trackBar_angle2.Name = "trackBar_angle2";
             this.trackBar_angle2.Size = new System.Drawing.Size(131, 45);
@@ -658,7 +657,7 @@ namespace winformLearn
             // trackBar_angle1
             // 
             this.trackBar_angle1.Location = new System.Drawing.Point(52, 78);
-            this.trackBar_angle1.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_angle1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_angle1.Maximum = 360;
             this.trackBar_angle1.Name = "trackBar_angle1";
             this.trackBar_angle1.Size = new System.Drawing.Size(131, 45);
@@ -679,7 +678,7 @@ namespace winformLearn
             // textBox_startAngle
             // 
             this.textBox_startAngle.Location = new System.Drawing.Point(199, 15);
-            this.textBox_startAngle.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_startAngle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_startAngle.Name = "textBox_startAngle";
             this.textBox_startAngle.Size = new System.Drawing.Size(32, 21);
             this.textBox_startAngle.TabIndex = 5;
@@ -699,7 +698,7 @@ namespace winformLearn
             // trackBar_startAngle
             // 
             this.trackBar_startAngle.Location = new System.Drawing.Point(74, 10);
-            this.trackBar_startAngle.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar_startAngle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar_startAngle.Maximum = 360;
             this.trackBar_startAngle.Name = "trackBar_startAngle";
             this.trackBar_startAngle.Size = new System.Drawing.Size(115, 45);
@@ -710,7 +709,7 @@ namespace winformLearn
             // textBox_angle1
             // 
             this.textBox_angle1.Location = new System.Drawing.Point(199, 80);
-            this.textBox_angle1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_angle1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_angle1.Name = "textBox_angle1";
             this.textBox_angle1.Size = new System.Drawing.Size(32, 21);
             this.textBox_angle1.TabIndex = 5;
@@ -753,7 +752,7 @@ namespace winformLearn
             this.comboBox_slot10.Enabled = false;
             this.comboBox_slot10.FormattingEnabled = true;
             this.comboBox_slot10.Location = new System.Drawing.Point(88, 717);
-            this.comboBox_slot10.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_slot10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_slot10.Name = "comboBox_slot10";
             this.comboBox_slot10.Size = new System.Drawing.Size(143, 20);
             this.comboBox_slot10.TabIndex = 1;
@@ -775,7 +774,7 @@ namespace winformLearn
             this.comboBox_slot9.Enabled = false;
             this.comboBox_slot9.FormattingEnabled = true;
             this.comboBox_slot9.Location = new System.Drawing.Point(88, 644);
-            this.comboBox_slot9.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_slot9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_slot9.Name = "comboBox_slot9";
             this.comboBox_slot9.Size = new System.Drawing.Size(143, 20);
             this.comboBox_slot9.TabIndex = 1;
@@ -787,7 +786,7 @@ namespace winformLearn
             this.comboBox_slot8.Enabled = false;
             this.comboBox_slot8.FormattingEnabled = true;
             this.comboBox_slot8.Location = new System.Drawing.Point(88, 571);
-            this.comboBox_slot8.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_slot8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_slot8.Name = "comboBox_slot8";
             this.comboBox_slot8.Size = new System.Drawing.Size(143, 20);
             this.comboBox_slot8.TabIndex = 1;
@@ -798,7 +797,7 @@ namespace winformLearn
             // 
             this.comboBox_slot7.FormattingEnabled = true;
             this.comboBox_slot7.Location = new System.Drawing.Point(88, 498);
-            this.comboBox_slot7.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_slot7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_slot7.Name = "comboBox_slot7";
             this.comboBox_slot7.Size = new System.Drawing.Size(143, 20);
             this.comboBox_slot7.TabIndex = 1;
@@ -810,7 +809,7 @@ namespace winformLearn
             // 
             this.comboBox_slot6.FormattingEnabled = true;
             this.comboBox_slot6.Location = new System.Drawing.Point(88, 426);
-            this.comboBox_slot6.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_slot6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_slot6.Name = "comboBox_slot6";
             this.comboBox_slot6.Size = new System.Drawing.Size(143, 20);
             this.comboBox_slot6.TabIndex = 1;
@@ -822,7 +821,7 @@ namespace winformLearn
             // 
             this.comboBox_slot5.FormattingEnabled = true;
             this.comboBox_slot5.Location = new System.Drawing.Point(88, 353);
-            this.comboBox_slot5.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_slot5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_slot5.Name = "comboBox_slot5";
             this.comboBox_slot5.Size = new System.Drawing.Size(143, 20);
             this.comboBox_slot5.TabIndex = 1;
@@ -834,7 +833,7 @@ namespace winformLearn
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 25);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(2);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -849,8 +848,8 @@ namespace winformLearn
             this.splitContainer2.Panel2.AutoScroll = true;
             this.splitContainer2.Panel2.Controls.Add(this.tabControl1);
             this.splitContainer2.Panel2MinSize = 2;
-            this.splitContainer2.Size = new System.Drawing.Size(572, 589);
-            this.splitContainer2.SplitterDistance = 440;
+            this.splitContainer2.Size = new System.Drawing.Size(573, 589);
+            this.splitContainer2.SplitterDistance = 438;
             this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 1;
             // 
@@ -858,10 +857,11 @@ namespace winformLearn
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Location = new System.Drawing.Point(72, 29);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 400);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // tabControl1
             // 
@@ -869,10 +869,10 @@ namespace winformLearn
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(572, 146);
+            this.tabControl1.Size = new System.Drawing.Size(573, 148);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -884,10 +884,10 @@ namespace winformLearn
             this.tabPage1.Controls.Add(this.checkBox_isRelative);
             this.tabPage1.Controls.Add(this.checkBox_isAuto360);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(564, 120);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(565, 122);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "控制区";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -922,8 +922,8 @@ namespace winformLearn
             this.checkBox_isDynamicDrawing.Checked = true;
             this.checkBox_isDynamicDrawing.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_isDynamicDrawing.Cursor = System.Windows.Forms.Cursors.Help;
-            this.checkBox_isDynamicDrawing.Location = new System.Drawing.Point(17, 15);
-            this.checkBox_isDynamicDrawing.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_isDynamicDrawing.Location = new System.Drawing.Point(16, 15);
+            this.checkBox_isDynamicDrawing.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox_isDynamicDrawing.Name = "checkBox_isDynamicDrawing";
             this.checkBox_isDynamicDrawing.Size = new System.Drawing.Size(72, 16);
             this.checkBox_isDynamicDrawing.TabIndex = 0;
@@ -937,7 +937,7 @@ namespace winformLearn
             this.checkBox_isWarningRed.Checked = true;
             this.checkBox_isWarningRed.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_isWarningRed.Location = new System.Drawing.Point(235, 15);
-            this.checkBox_isWarningRed.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_isWarningRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox_isWarningRed.Name = "checkBox_isWarningRed";
             this.checkBox_isWarningRed.Size = new System.Drawing.Size(120, 16);
             this.checkBox_isWarningRed.TabIndex = 3;
@@ -949,8 +949,8 @@ namespace winformLearn
             // 
             this.checkBox_isRelative.AutoSize = true;
             this.checkBox_isRelative.Cursor = System.Windows.Forms.Cursors.Help;
-            this.checkBox_isRelative.Location = new System.Drawing.Point(16, 37);
-            this.checkBox_isRelative.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_isRelative.Location = new System.Drawing.Point(16, 38);
+            this.checkBox_isRelative.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox_isRelative.Name = "checkBox_isRelative";
             this.checkBox_isRelative.Size = new System.Drawing.Size(72, 16);
             this.checkBox_isRelative.TabIndex = 3;
@@ -962,7 +962,7 @@ namespace winformLearn
             // 
             this.checkBox_isAuto360.AutoSize = true;
             this.checkBox_isAuto360.Location = new System.Drawing.Point(93, 15);
-            this.checkBox_isAuto360.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox_isAuto360.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox_isAuto360.Name = "checkBox_isAuto360";
             this.checkBox_isAuto360.Size = new System.Drawing.Size(138, 16);
             this.checkBox_isAuto360.TabIndex = 3;
@@ -976,10 +976,10 @@ namespace winformLearn
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(564, 120);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(565, 123);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "调试区";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -988,7 +988,7 @@ namespace winformLearn
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.Location = new System.Drawing.Point(268, 47);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 22);
             this.button3.TabIndex = 1;
@@ -1000,7 +1000,7 @@ namespace winformLearn
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(157, 47);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 22);
             this.button2.TabIndex = 1;
@@ -1012,7 +1012,7 @@ namespace winformLearn
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(42, 47);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 22);
             this.button1.TabIndex = 1;
@@ -1033,7 +1033,7 @@ namespace winformLearn
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(572, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(573, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1055,7 +1055,7 @@ namespace winformLearn
             this.pUBG投掷物轮盘ToolStripMenuItem,
             this.pUBG投掷物轮盘无C4ToolStripMenuItem});
             this.预设方案ToolStripMenuItem.Name = "预设方案ToolStripMenuItem";
-            this.预设方案ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.预设方案ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.预设方案ToolStripMenuItem.Text = "预设方案";
             // 
             // cSGO默认武器轮盘ToolStripMenuItem
@@ -1085,7 +1085,7 @@ namespace winformLearn
             this.自定义方案4ToolStripMenuItem1,
             this.自定义方案5ToolStripMenuItem1});
             this.自定义方案ToolStripMenuItem.Name = "自定义方案ToolStripMenuItem";
-            this.自定义方案ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.自定义方案ToolStripMenuItem.Text = "自定义方案";
             // 
             // 自定义方案1ToolStripMenuItem1
@@ -1135,31 +1135,31 @@ namespace winformLearn
             // 自定义方案1ToolStripMenuItem
             // 
             this.自定义方案1ToolStripMenuItem.Name = "自定义方案1ToolStripMenuItem";
-            this.自定义方案1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案1ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.自定义方案1ToolStripMenuItem.Text = "自定义方案1";
             // 
             // 自定义方案2ToolStripMenuItem
             // 
             this.自定义方案2ToolStripMenuItem.Name = "自定义方案2ToolStripMenuItem";
-            this.自定义方案2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案2ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.自定义方案2ToolStripMenuItem.Text = "自定义方案2";
             // 
             // 自定义方案3ToolStripMenuItem
             // 
             this.自定义方案3ToolStripMenuItem.Name = "自定义方案3ToolStripMenuItem";
-            this.自定义方案3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案3ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.自定义方案3ToolStripMenuItem.Text = "自定义方案3";
             // 
             // 自定义方案4ToolStripMenuItem
             // 
             this.自定义方案4ToolStripMenuItem.Name = "自定义方案4ToolStripMenuItem";
-            this.自定义方案4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案4ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.自定义方案4ToolStripMenuItem.Text = "自定义方案4";
             // 
             // 自定义方案5ToolStripMenuItem
             // 
             this.自定义方案5ToolStripMenuItem.Name = "自定义方案5ToolStripMenuItem";
-            this.自定义方案5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自定义方案5ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.自定义方案5ToolStripMenuItem.Text = "自定义方案5";
             // 
             // 导入ToolStripMenuItem
@@ -1188,7 +1188,7 @@ namespace winformLearn
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
@@ -1205,13 +1205,13 @@ namespace winformLearn
             // zhcnToolStripMenuItem
             // 
             this.zhcnToolStripMenuItem.Name = "zhcnToolStripMenuItem";
-            this.zhcnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.zhcnToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.zhcnToolStripMenuItem.Text = "zh-cn";
             // 
             // enusToolStripMenuItem
             // 
             this.enusToolStripMenuItem.Name = "enusToolStripMenuItem";
-            this.enusToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.enusToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.enusToolStripMenuItem.Text = "en-us";
             // 
             // customQuickInv
@@ -1221,7 +1221,7 @@ namespace winformLearn
             this.ClientSize = new System.Drawing.Size(870, 614);
             this.Controls.Add(this.splitContainer1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "customQuickInv";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -62,7 +62,7 @@ namespace winformLearn
             Boxname.Items.Add("----大类----");
             Boxname.Items.Add("RIFLE主武器");
             Boxname.Items.Add("PISTOL副武器");
-            Boxname.Items.Add("KNIFE近战武器");
+            Boxname.Items.Add("KNIFE近战武器(包括电击枪)");
             Boxname.Items.Add("UTILITY头号特训平板");
             Boxname.Items.Add("BOOSTS增益道具(防爆盾、治疗针)");
             Boxname.Items.Add("C4(包括头号特训跳雷)");
@@ -152,11 +152,6 @@ namespace winformLearn
         }
 
 
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
 
 
 
@@ -188,7 +183,8 @@ namespace winformLearn
             toolTip_startAngle.InitialDelay = 200;
             toolTip_startAngle.ReshowDelay = 200;
             toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
-            toolTip_startAngle.SetToolTip(checkBox_isRelative, "有大bug，暂时禁用");
+            toolTip_startAngle.SetToolTip(checkBox_isRelative, "有大bug，暂时禁用" +
+                "\n令当前项角度与下一项角度 之和 不发生变化。若当前为最后一项，则与前一项进行调整");
             toolTip_startAngle.SetToolTip(checkBox_isDynamicDrawing, "每当角度、槽位选项改变时，重新绘制轮盘");
             toolTip_startAngle.SetToolTip(radioButton_AdjustEnd, "若角度和未满360，则增加最后槽位的角度，使和为360" +
                 "\n若角度和超过360，仅保留第一个到达360的槽位，舍去其后面的所有槽位（令其角度为0）");
@@ -279,160 +275,199 @@ namespace winformLearn
 
         ////////////////////////槽位是否启用模块END/////////////////////////////////
 
+
+        ////////////////////////角度辅助调整各功能///////////////////////////////
+        public void AngleAssists()
+        {
+            if(Config.isAdjustEnd == true)
+            {
+                Auto360_AdjustEnd();
+
+            }
+            if (Config.isAverageAngles == true)
+            {
+                Auto360_AverageAngles();
+
+            }
+            if (Config.isKeepAngleSumFixed == true)
+            {
+                keepAngleSumFixed();
+            }
+        }
         ///////////////////////////角度控件START////////////////////////////////
 
         private void trackBar_startAngle_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_startAngle, textBox_startAngle);
             dynamicDrawing();
-            keepAngleSumFixed();
+           // AngleAssists();
         }
 
         private void textBox__startAngle_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_startAngle, textBox_startAngle);
             dynamicDrawing();
-            keepAngleSumFixed();
+           // AngleAssists();
         }
         private void trackBar_angle1_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle1, textBox_angle1);
-            dynamicDrawing();
-            keepAngleSumFixed();
+
+            //AngleAssists();
+            //dynamicDrawing();
         }
 
         private void AngleBox1_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle1, textBox_angle1);
+            
+            AngleAssists();
             dynamicDrawing();
-            keepAngleSumFixed();
         }
 
         private void trackBar_angle2_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle2, textBox_angle2);
-            dynamicDrawing();
-            keepAngleSumFixed();
+
+            //AngleAssists();
+            //dynamicDrawing();
         }
 
         private void AngleBox2_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle2, textBox_angle2);
+            
+            AngleAssists();
             dynamicDrawing();
-            keepAngleSumFixed();
         }
 
 
         private void trackBar3_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle3, textBox_angle3);
-            dynamicDrawing();
-            keepAngleSumFixed();
+
+            //AngleAssists();
+            //dynamicDrawing();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle3, textBox_angle3);
+            
+            AngleAssists();
             dynamicDrawing();
-            keepAngleSumFixed();
         }
 
         private void trackBar_angle4_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle4, textBox_angle4);
-            dynamicDrawing();
-            keepAngleSumFixed();
+
+            //AngleAssists();
+            //dynamicDrawing();
         }
 
         private void textBox_angle4_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle4, textBox_angle4);
+            
+            AngleAssists();
             dynamicDrawing();
-            keepAngleSumFixed();
         }
 
         private void trackBar_angle5_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle5, textBox_angle5);
-            dynamicDrawing();
-            keepAngleSumFixed();
+
+            //AngleAssists();
+            //dynamicDrawing();
         }
 
         private void textBox_angle5_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle5, textBox_angle5);
+            
+            AngleAssists();
             dynamicDrawing();
-            keepAngleSumFixed();
         }
 
         private void trackBar_angle6_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle6, textBox_angle6);
-            dynamicDrawing();
-            keepAngleSumFixed();
+
+            //AngleAssists();
+            //dynamicDrawing();
         }
 
         private void textBox_angle6_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle6, textBox_angle6);
+            
+            AngleAssists();
             dynamicDrawing();
-            keepAngleSumFixed();
         }
 
         private void trackBar_angle7_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle7, textBox_angle7);
-            dynamicDrawing();
-            keepAngleSumFixed();
+
+            //AngleAssists();
+            //dynamicDrawing();
         }
 
         private void textBox_angle7_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle7, textBox_angle7);
+            
+            AngleAssists();
             dynamicDrawing();
-            keepAngleSumFixed();
         }
 
         private void trackBar_angle8_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle8, textBox_angle8);
-            dynamicDrawing();
-            keepAngleSumFixed();
+
+            //AngleAssists();
+            //dynamicDrawing();
         }
 
         private void textBox_angle8_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle8, textBox_angle8);
+            
+            AngleAssists();
             dynamicDrawing();
-            keepAngleSumFixed();
         }
 
         private void trackBar_angle9_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle9, textBox_angle9);
-            dynamicDrawing();
-            keepAngleSumFixed();
+
+            //AngleAssists();
+            //dynamicDrawing();
         }
 
         private void textBox_angle9_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle9, textBox_angle9);
+            
+            AngleAssists();
             dynamicDrawing();
-            keepAngleSumFixed();
         }
 
         private void trackBar_angle10_Scroll(object sender, EventArgs e)
         {
             AngleMod_TrackBar(trackBar_angle10, textBox_angle10);
-            dynamicDrawing();
-            keepAngleSumFixed();
+
+            //AngleAssists();
+            //dynamicDrawing();
         }
 
         private void textBox_angle10_TextChanged(object sender, EventArgs e)
         {
             AngleMod_TextBox(trackBar_angle10, textBox_angle10);
+            
+            AngleAssists();
             dynamicDrawing();
-            keepAngleSumFixed();
         }
         ///////////////////////////////角度控件END////////////////////////////////////
 
@@ -854,6 +889,10 @@ namespace winformLearn
                     //判断是否应该放图片
                     //fan1.sweepAngle=0 ;  槽位未选择物品   时不放图片
 
+                    //void midPictures()
+                    //{
+
+                    
                     if (fan1.sweepAngle != 0 && (slots[i].Text != "" && slots[i].Text != "----投掷物----" && slots[i].Text != "----大类----"))
                     {
 
@@ -929,7 +968,7 @@ namespace winformLearn
 
                         }
 
-
+                       // }
                     }
 
 
@@ -1081,6 +1120,8 @@ namespace winformLearn
         /// </summary>
         public void getFixedAngle()
         {
+            common.originalAngle.Clear();
+            common.fixedAngleSum.Clear();
 
             TextBox[] angleBoxes ={
                 textBox_angle1,
@@ -1114,7 +1155,7 @@ namespace winformLearn
 
             common.fixedAngleSum.RemoveAt(0);
             common.fixedAngleSum.Add(common.fixedAngleSum[common.fixedAngleSum.Count - 1]);//新增最后一项，其值等于原来的最后一项
-
+            
 
         }
 
@@ -1123,9 +1164,10 @@ namespace winformLearn
         /// </summary>
         public void keepAngleSumFixed()
         {
-
-            if (Config.isKeepAngleSumFixed == true)
-            {
+            //开关挪到AngleAssists函数里了
+            
+            //if (Config.isKeepAngleSumFixed == true)
+            //{
 
 
                 TextBox[] angleBoxes ={
@@ -1180,7 +1222,7 @@ namespace winformLearn
 
 
 
-            }
+            //}
         }
 
 
@@ -1240,8 +1282,10 @@ namespace winformLearn
             //则对最后一项进行调整，增加其值
             //2.角度和 > 360
             //则找出超出360的第一个槽位，减少其值，然后令其后面的项 角度值=0
-            if (Config.isAdjustEnd == true)
-            {
+
+            //开关挪到AngleAssists函数里了
+            //if (Config.isAdjustEnd == true)
+            //{
                 TextBox[] angleBoxes ={
                 textBox_angle1,
                 textBox_angle2,
@@ -1283,11 +1327,11 @@ namespace winformLearn
                 i = i - 2;//使i为最后一项的索引
                 
                 //已获取angleSum,对其进行分析
-                if (angleSum[i] - 360 < 0)
+                if (angleSum[i] - 360 < 0)  //未满3660
                 {
-                    enabledAngleBoxes[i].Text = Convert.ToString(Convert.ToInt32(enabledAngleBoxes[i].Text) + (-angleSum[i] - 360));
+                    enabledAngleBoxes[i].Text = Convert.ToString(Convert.ToInt32(enabledAngleBoxes[i].Text) - (angleSum[i] - 360));
                 }
-                if (angleSum[i] - 360 > 0)
+                if (angleSum[i] - 360 > 0)  //超出360
                 {
                     int k = angleSum.FindIndex((j) => { return j > 360; });//找到>360的第一项的索引位置
                     enabledAngleBoxes[k].Text = Convert.ToString(Convert.ToInt32(enabledAngleBoxes[k].Text) - (angleSum[k] - 360 ));
@@ -1297,7 +1341,7 @@ namespace winformLearn
                     }
                 }
                 
-            }
+            //}
         }
 
         /////////////////////////均分模式/////////////////////////////
@@ -1306,8 +1350,10 @@ namespace winformLearn
         /// </summary>
         public void Auto360_AverageAngles()
         {
-            if(Config.isAverageAngles == true)
-            {
+
+            //开关挪到AngleAssists函数里了
+            //if (Config.isAverageAngles == true)
+            //{
 
             
             //先获取有几个槽位是开着的，然后进行均分。
@@ -1340,6 +1386,7 @@ namespace winformLearn
             }
             else
             {
+                    //7之外都没有小数，简单粗暴的直接分配，懒得写函数了
                     enabledAngleBoxes[0].Text = "51";
                     enabledAngleBoxes[1].Text = "52";
                     enabledAngleBoxes[2].Text = "51";
@@ -1347,11 +1394,25 @@ namespace winformLearn
                     enabledAngleBoxes[4].Text = "51";
                     enabledAngleBoxes[5].Text = "52";
                     enabledAngleBoxes[6].Text = "51";
+                    //预想中的简单算法：
+                    //先取得商和余数，然后从头或从尾分别令余数项角度值 +1
+                    //稍微进阶一点：
+                    //先从头开始令奇数项+1，若还有剩余则从头开始令偶数项+1
                 }
 
-            }
+            //}
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            //drawLinesWhenPaint();//解决了外框消失的问题，但会二次放置图片，显著拖慢速度 ,需要把图片放置从drawFans函数中抽离
+            void drawLinesWhenPaint()
+            {
+                drawFans();
+                drawInnerCircle();
+            }
+            
+        }
     }
 }
 
