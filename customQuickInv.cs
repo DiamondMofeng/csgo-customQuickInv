@@ -194,8 +194,10 @@ namespace winformLearn
             toolTip_startAngle.AutoPopDelay = 10000;
             toolTip_startAngle.InitialDelay = 200;
             toolTip_startAngle.ReshowDelay = 200;
+            //左侧
             toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
-            toolTip_startAngle.SetToolTip(checkBox_isRelative, "暂时没发现有大bug，若发生错误请不要使用" +
+            //控制区
+            toolTip_startAngle.SetToolTip(checkBox_isRelative, "开启时禁用新增/删除槽位 以及 调整槽位最大角度功能" +
                 "\n令当前项角度与下一项角度 之和 不发生变化。若当前为最后一项，则与前一项进行调整" +
                 "\n若调整后，被动调整项数值将小于0，则本次主动调整无效，对于细小调节请手动输入数字");
             toolTip_startAngle.SetToolTip(checkBox_isDynamicDrawing, "每当角度、槽位选项改变时，重新绘制轮盘");
@@ -205,7 +207,7 @@ namespace winformLearn
                 "\n当相对调整和自动调整360启用时，禁用本功能");
             toolTip_startAngle.SetToolTip(checkBox_AutoRePaint, "开启本项可防止轮盘图形意外消失，但会减慢绘图速度" +
                 "\n关闭本项可增加绘图速度，但轮盘图形可能会意外消失");
-            //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
+            toolTip_startAngle.SetToolTip(checkBox_isAuto360, "开启时禁用调整槽位最大角度功能");
             //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
 
 
@@ -345,11 +347,11 @@ namespace winformLearn
 
         private void AngleBox1_TextChanged(object sender, EventArgs e)
         {
-            
-            
+            AngleMod_TextBox(trackBar_angle1, textBox_angle1);
+
             AngleAssists();
             dynamicDrawing();
-            AngleMod_TextBox(trackBar_angle1, textBox_angle1);
+            
         }
 
         private void trackBar_angle2_Scroll(object sender, EventArgs e)
@@ -362,11 +364,11 @@ namespace winformLearn
 
         private void AngleBox2_TextChanged(object sender, EventArgs e)
         {
-            
+            AngleMod_TextBox(trackBar_angle2, textBox_angle2);
             AngleAssists();
             dynamicDrawing();
 
-            AngleMod_TextBox(trackBar_angle2, textBox_angle2);
+            
         }
 
 
@@ -380,10 +382,9 @@ namespace winformLearn
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            
+            AngleMod_TextBox(trackBar_angle3, textBox_angle3);
             AngleAssists();
             dynamicDrawing();
-            AngleMod_TextBox(trackBar_angle3, textBox_angle3);
         }
 
         private void trackBar_angle4_Scroll(object sender, EventArgs e)
@@ -396,10 +397,9 @@ namespace winformLearn
 
         private void textBox_angle4_TextChanged(object sender, EventArgs e)
         {
-            
+            AngleMod_TextBox(trackBar_angle4, textBox_angle4);
             AngleAssists();
             dynamicDrawing();
-            AngleMod_TextBox(trackBar_angle4, textBox_angle4);
         }
 
         private void trackBar_angle5_Scroll(object sender, EventArgs e)
@@ -412,10 +412,9 @@ namespace winformLearn
 
         private void textBox_angle5_TextChanged(object sender, EventArgs e)
         {
-            
+            AngleMod_TextBox(trackBar_angle5, textBox_angle5);
             AngleAssists();
             dynamicDrawing();
-            AngleMod_TextBox(trackBar_angle5, textBox_angle5);
         }
 
         private void trackBar_angle6_Scroll(object sender, EventArgs e)
@@ -428,10 +427,9 @@ namespace winformLearn
 
         private void textBox_angle6_TextChanged(object sender, EventArgs e)
         {
-            
+            AngleMod_TextBox(trackBar_angle6, textBox_angle6);
             AngleAssists();
             dynamicDrawing();
-            AngleMod_TextBox(trackBar_angle6, textBox_angle6);
         }
 
         private void trackBar_angle7_Scroll(object sender, EventArgs e)
@@ -444,10 +442,9 @@ namespace winformLearn
 
         private void textBox_angle7_TextChanged(object sender, EventArgs e)
         {
-            
+            AngleMod_TextBox(trackBar_angle7, textBox_angle7);
             AngleAssists();
             dynamicDrawing();
-            AngleMod_TextBox(trackBar_angle7, textBox_angle7);
         }
 
         private void trackBar_angle8_Scroll(object sender, EventArgs e)
@@ -460,10 +457,9 @@ namespace winformLearn
 
         private void textBox_angle8_TextChanged(object sender, EventArgs e)
         {
-            
+            AngleMod_TextBox(trackBar_angle8, textBox_angle8);
             AngleAssists();
             dynamicDrawing();
-            AngleMod_TextBox(trackBar_angle8, textBox_angle8);
         }
 
         private void trackBar_angle9_Scroll(object sender, EventArgs e)
@@ -476,10 +472,9 @@ namespace winformLearn
 
         private void textBox_angle9_TextChanged(object sender, EventArgs e)
         {
-            
+            AngleMod_TextBox(trackBar_angle9, textBox_angle9);
             AngleAssists();
             dynamicDrawing();
-            AngleMod_TextBox(trackBar_angle9, textBox_angle9);
         }
 
         private void trackBar_angle10_Scroll(object sender, EventArgs e)
@@ -492,10 +487,9 @@ namespace winformLearn
 
         private void textBox_angle10_TextChanged(object sender, EventArgs e)
         {
-            
+            AngleMod_TextBox(trackBar_angle10, textBox_angle10);
             AngleAssists();
             dynamicDrawing();
-            AngleMod_TextBox(trackBar_angle10, textBox_angle10);
         }
         ///////////////////////////////角度控件END////////////////////////////////////
 
@@ -796,7 +790,7 @@ namespace winformLearn
             //1.定义笔
             //2.定义圆环内圆、外圆的外切矩形
             //3.计算圆环起始角度、经过角度
-            //4,分别画出外、内侧两弧
+            //4.分别画出外、内侧两弧
             //5.计算端点坐标,画两条直线将其连起来
             //5.扇形完成，考虑在这一步将武器图片放上。
             //ps.有个问题，这样画的不知道应该如何填充内部颜色。
@@ -1102,7 +1096,7 @@ namespace winformLearn
         {
             MessageBox.Show("感谢使用本软件！" +
                 "\n本软件仅供本C#初学者练手，如引起使用过程中的不舒服，尽情谅解" +
-                "\nCSGO-customWeaponWheelVisuableEditor Version 0.8.0" +
+                "\nCSGO-customWeaponWheelVisuableEditor Version 0.8.6" +
                 "\nWelcome to visit my website at httpS://blog.mofengfeng.com  !" +
                 "\nCreated By: Mofeng");
         }
@@ -1146,9 +1140,36 @@ namespace winformLearn
                 Config.isKeepAngleSumFixed = false;
 
             }
+            enOrDisSlots();
             enOrDisMaxAgnle();
         }
-
+        void enOrDisSlots()
+        {
+            CheckBox[] checkbox_Slots =
+               {
+                checkBox1,
+                checkBox2,
+                checkBox3,
+                checkBox4,
+                checkBox5,
+                checkBox6,
+                checkBox7,
+                checkBox8,
+                checkBox9,
+                checkBox10
+            };
+            foreach (CheckBox t in checkbox_Slots)
+            {
+                if (checkBox_isRelative.Checked == true)
+                {
+                    t.Enabled = false;
+                }
+                if (checkBox_isRelative.Checked == false)
+                {
+                    t.Enabled = true;
+                }
+            }            
+        }
 
         /////////////////////////////////相对调整模块//START///////////////////////////////////////////////
 
@@ -1243,7 +1264,7 @@ namespace winformLearn
                 {
                     if (common.fixedAngleSum[i] - Convert.ToInt32(activeAngleBoxes[i].Text) < 0) //防止减出负数，影响相隔项
                     {
-                        activeAngleBoxes[i].Text = Convert.ToString(common.originalAngle[i]);//若减出负数，则回溯对于角度的修改
+                        activeAngleBoxes[i].Text = Convert.ToString(common.fixedAngleSum[i]);//若减出负数，则令本项为最大值，且不可继续调整
                         break;
                     }
                     else

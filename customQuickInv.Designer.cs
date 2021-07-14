@@ -905,6 +905,7 @@ namespace winformLearn
             // radioButton_AdjustEnd
             // 
             this.radioButton_AdjustEnd.AutoSize = true;
+            this.radioButton_AdjustEnd.Cursor = System.Windows.Forms.Cursors.Help;
             this.radioButton_AdjustEnd.Enabled = false;
             this.radioButton_AdjustEnd.Location = new System.Drawing.Point(168, 37);
             this.radioButton_AdjustEnd.Name = "radioButton_AdjustEnd";
@@ -971,6 +972,7 @@ namespace winformLearn
             // checkBox_isAuto360
             // 
             this.checkBox_isAuto360.AutoSize = true;
+            this.checkBox_isAuto360.Cursor = System.Windows.Forms.Cursors.Help;
             this.checkBox_isAuto360.Location = new System.Drawing.Point(168, 15);
             this.checkBox_isAuto360.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox_isAuto360.Name = "checkBox_isAuto360";
@@ -1273,6 +1275,7 @@ namespace winformLearn
             this.checkBox_AutoRePaint.AutoSize = true;
             this.checkBox_AutoRePaint.Checked = true;
             this.checkBox_AutoRePaint.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_AutoRePaint.Cursor = System.Windows.Forms.Cursors.Help;
             this.checkBox_AutoRePaint.Location = new System.Drawing.Point(168, 99);
             this.checkBox_AutoRePaint.Name = "checkBox_AutoRePaint";
             this.checkBox_AutoRePaint.Size = new System.Drawing.Size(72, 16);
