@@ -896,7 +896,7 @@ namespace winformLearn
             // 
             this.radioButton_AdjustEnd.AutoSize = true;
             this.radioButton_AdjustEnd.Enabled = false;
-            this.radioButton_AdjustEnd.Location = new System.Drawing.Point(93, 37);
+            this.radioButton_AdjustEnd.Location = new System.Drawing.Point(168, 37);
             this.radioButton_AdjustEnd.Name = "radioButton_AdjustEnd";
             this.radioButton_AdjustEnd.Size = new System.Drawing.Size(71, 16);
             this.radioButton_AdjustEnd.TabIndex = 5;
@@ -908,7 +908,7 @@ namespace winformLearn
             // 
             this.radioButton_AverageAngles.AutoSize = true;
             this.radioButton_AverageAngles.Enabled = false;
-            this.radioButton_AverageAngles.Location = new System.Drawing.Point(93, 59);
+            this.radioButton_AverageAngles.Location = new System.Drawing.Point(168, 59);
             this.radioButton_AverageAngles.Name = "radioButton_AverageAngles";
             this.radioButton_AverageAngles.Size = new System.Drawing.Size(71, 16);
             this.radioButton_AverageAngles.TabIndex = 5;
@@ -927,7 +927,7 @@ namespace winformLearn
             this.checkBox_isDynamicDrawing.Name = "checkBox_isDynamicDrawing";
             this.checkBox_isDynamicDrawing.Size = new System.Drawing.Size(72, 16);
             this.checkBox_isDynamicDrawing.TabIndex = 0;
-            this.checkBox_isDynamicDrawing.Text = "动态绘制";
+            this.checkBox_isDynamicDrawing.Text = "实时绘制";
             this.checkBox_isDynamicDrawing.UseVisualStyleBackColor = true;
             this.checkBox_isDynamicDrawing.CheckedChanged += new System.EventHandler(this.checkBox_isDynamicDrawing_CheckedChanged);
             // 
@@ -936,7 +936,7 @@ namespace winformLearn
             this.checkBox_isWarningRed.AutoSize = true;
             this.checkBox_isWarningRed.Checked = true;
             this.checkBox_isWarningRed.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_isWarningRed.Location = new System.Drawing.Point(235, 15);
+            this.checkBox_isWarningRed.Location = new System.Drawing.Point(310, 15);
             this.checkBox_isWarningRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox_isWarningRed.Name = "checkBox_isWarningRed";
             this.checkBox_isWarningRed.Size = new System.Drawing.Size(120, 16);
@@ -949,7 +949,7 @@ namespace winformLearn
             // 
             this.checkBox_isRelative.AutoSize = true;
             this.checkBox_isRelative.Cursor = System.Windows.Forms.Cursors.Help;
-            this.checkBox_isRelative.Location = new System.Drawing.Point(16, 38);
+            this.checkBox_isRelative.Location = new System.Drawing.Point(92, 15);
             this.checkBox_isRelative.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox_isRelative.Name = "checkBox_isRelative";
             this.checkBox_isRelative.Size = new System.Drawing.Size(72, 16);
@@ -961,7 +961,7 @@ namespace winformLearn
             // checkBox_isAuto360
             // 
             this.checkBox_isAuto360.AutoSize = true;
-            this.checkBox_isAuto360.Location = new System.Drawing.Point(93, 15);
+            this.checkBox_isAuto360.Location = new System.Drawing.Point(168, 15);
             this.checkBox_isAuto360.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox_isAuto360.Name = "checkBox_isAuto360";
             this.checkBox_isAuto360.Size = new System.Drawing.Size(138, 16);

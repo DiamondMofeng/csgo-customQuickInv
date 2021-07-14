@@ -217,59 +217,70 @@ namespace winformLearn
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             SoltEnableMod(checkBox1, comboBox_slot1, trackBar_angle1, textBox_angle1);
+            AngleAssists();
             dynamicDrawing();
         }
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
+
             SoltEnableMod(checkBox2, comboBox_slot2, trackBar_angle2, textBox_angle2);
+            AngleAssists();
             dynamicDrawing();
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             SoltEnableMod(checkBox3, comboBox_slot3, trackBar_angle3, textBox_angle3);
+            AngleAssists();
             dynamicDrawing();
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
             SoltEnableMod(checkBox4, comboBox_slot4, trackBar_angle4, textBox_angle4);
+            AngleAssists();
             dynamicDrawing();
         }
 
         private void checkBox5_CheckedChanged(object sender, EventArgs e)
         {
             SoltEnableMod(checkBox5, comboBox_slot5, trackBar_angle5, textBox_angle5);
+            AngleAssists();
             dynamicDrawing();
         }
 
         private void checkBox6_CheckedChanged(object sender, EventArgs e)
         {
             SoltEnableMod(checkBox6, comboBox_slot6, trackBar_angle6, textBox_angle6);
+            AngleAssists();
             dynamicDrawing();
         }
 
         private void checkBox7_CheckedChanged(object sender, EventArgs e)
         {
             SoltEnableMod(checkBox7, comboBox_slot7, trackBar_angle7, textBox_angle7);
+            AngleAssists();
             dynamicDrawing();
         }
 
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
         {
             SoltEnableMod(checkBox8, comboBox_slot8, trackBar_angle8, textBox_angle8);
+            AngleAssists();
             dynamicDrawing();
         }
 
         private void checkBox9_CheckedChanged(object sender, EventArgs e)
         {
             SoltEnableMod(checkBox9, comboBox_slot9, trackBar_angle9, textBox_angle9);
+            AngleAssists();
             dynamicDrawing();
         }
 
         private void checkBox10_CheckedChanged(object sender, EventArgs e)
         {
             SoltEnableMod(checkBox10, comboBox_slot10, trackBar_angle10, textBox_angle10);
+            AngleAssists();
             dynamicDrawing();
         }
 
@@ -319,10 +330,11 @@ namespace winformLearn
 
         private void AngleBox1_TextChanged(object sender, EventArgs e)
         {
-            AngleMod_TextBox(trackBar_angle1, textBox_angle1);
+            
             
             AngleAssists();
             dynamicDrawing();
+            AngleMod_TextBox(trackBar_angle1, textBox_angle1);
         }
 
         private void trackBar_angle2_Scroll(object sender, EventArgs e)
@@ -335,10 +347,11 @@ namespace winformLearn
 
         private void AngleBox2_TextChanged(object sender, EventArgs e)
         {
-            AngleMod_TextBox(trackBar_angle2, textBox_angle2);
             
             AngleAssists();
             dynamicDrawing();
+
+            AngleMod_TextBox(trackBar_angle2, textBox_angle2);
         }
 
 
@@ -352,10 +365,10 @@ namespace winformLearn
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            AngleMod_TextBox(trackBar_angle3, textBox_angle3);
             
             AngleAssists();
             dynamicDrawing();
+            AngleMod_TextBox(trackBar_angle3, textBox_angle3);
         }
 
         private void trackBar_angle4_Scroll(object sender, EventArgs e)
@@ -368,10 +381,10 @@ namespace winformLearn
 
         private void textBox_angle4_TextChanged(object sender, EventArgs e)
         {
-            AngleMod_TextBox(trackBar_angle4, textBox_angle4);
             
             AngleAssists();
             dynamicDrawing();
+            AngleMod_TextBox(trackBar_angle4, textBox_angle4);
         }
 
         private void trackBar_angle5_Scroll(object sender, EventArgs e)
@@ -384,10 +397,10 @@ namespace winformLearn
 
         private void textBox_angle5_TextChanged(object sender, EventArgs e)
         {
-            AngleMod_TextBox(trackBar_angle5, textBox_angle5);
             
             AngleAssists();
             dynamicDrawing();
+            AngleMod_TextBox(trackBar_angle5, textBox_angle5);
         }
 
         private void trackBar_angle6_Scroll(object sender, EventArgs e)
@@ -400,10 +413,10 @@ namespace winformLearn
 
         private void textBox_angle6_TextChanged(object sender, EventArgs e)
         {
-            AngleMod_TextBox(trackBar_angle6, textBox_angle6);
             
             AngleAssists();
             dynamicDrawing();
+            AngleMod_TextBox(trackBar_angle6, textBox_angle6);
         }
 
         private void trackBar_angle7_Scroll(object sender, EventArgs e)
@@ -416,10 +429,10 @@ namespace winformLearn
 
         private void textBox_angle7_TextChanged(object sender, EventArgs e)
         {
-            AngleMod_TextBox(trackBar_angle7, textBox_angle7);
             
             AngleAssists();
             dynamicDrawing();
+            AngleMod_TextBox(trackBar_angle7, textBox_angle7);
         }
 
         private void trackBar_angle8_Scroll(object sender, EventArgs e)
@@ -432,10 +445,10 @@ namespace winformLearn
 
         private void textBox_angle8_TextChanged(object sender, EventArgs e)
         {
-            AngleMod_TextBox(trackBar_angle8, textBox_angle8);
             
             AngleAssists();
             dynamicDrawing();
+            AngleMod_TextBox(trackBar_angle8, textBox_angle8);
         }
 
         private void trackBar_angle9_Scroll(object sender, EventArgs e)
@@ -448,10 +461,10 @@ namespace winformLearn
 
         private void textBox_angle9_TextChanged(object sender, EventArgs e)
         {
-            AngleMod_TextBox(trackBar_angle9, textBox_angle9);
             
             AngleAssists();
             dynamicDrawing();
+            AngleMod_TextBox(trackBar_angle9, textBox_angle9);
         }
 
         private void trackBar_angle10_Scroll(object sender, EventArgs e)
@@ -464,10 +477,10 @@ namespace winformLearn
 
         private void textBox_angle10_TextChanged(object sender, EventArgs e)
         {
-            AngleMod_TextBox(trackBar_angle10, textBox_angle10);
             
             AngleAssists();
             dynamicDrawing();
+            AngleMod_TextBox(trackBar_angle10, textBox_angle10);
         }
         ///////////////////////////////角度控件END////////////////////////////////////
 
@@ -1062,6 +1075,7 @@ namespace winformLearn
             if (checkBox_isDynamicDrawing.Checked == true)
             {
                 Config.isDynamicDrawing = true;
+                dynamicDrawing();
             }
             else
             {
@@ -1102,7 +1116,11 @@ namespace winformLearn
         {
             if (checkBox_isRelative.Checked == true)
             {
+
+                checkBox_isAuto360.Checked = false;//禁止与auto360同时使用
+      
                 Config.isKeepAngleSumFixed = true;
+
                 getFixedAngle();//开启时储存当前各角度信息
             }
             else
@@ -1182,14 +1200,14 @@ namespace winformLearn
                 textBox_angle9,
                 textBox_angle10};
 
-                List<int> currentAngle = new List<int>();
+                //List<int> currentAngle = new List<int>();
                 List<TextBox> activeAngleBoxes = new List<TextBox>();
 
                 foreach (TextBox t in angleBoxes)
                 {
                     if (t.Enabled == true)
                     {
-                        currentAngle.Add(Convert.ToInt32(t.Text));//保存每个槽位的现有角度
+                        //currentAngle.Add(Convert.ToInt32(t.Text));//保存每个槽位的现有角度
 
                         activeAngleBoxes.Add(t);//生成active角度文本框List
 
@@ -1197,28 +1215,37 @@ namespace winformLearn
                     }
                 }
 
-                //对比角度是否发生变化
+            //对比角度是否发生变化
 
-                for (int i = 0; i <= currentAngle.Count - 1; i++)
+            for (int i = 0; i <= activeAngleBoxes.Count - 1; i++)
+            {
+                if (Convert.ToInt32(activeAngleBoxes[i].Text) != common.originalAngle[i])
                 {
-                    if (currentAngle[i] != common.originalAngle[i])
+                    if (common.fixedAngleSum[i] - Convert.ToInt32(activeAngleBoxes[i].Text) < 0) //防止减出负数，影响相隔项
                     {
-                        if (i < currentAngle.Count - 1)
-                        {
-                            activeAngleBoxes[i + 1].Text = Convert.ToString(common.fixedAngleSum[i] - currentAngle[i]);
-                            getFixedAngle();//重获各角度信息
-                            break;
-                        }
-                        if (i == currentAngle.Count - 1)//末位则对前一项进行调整
-                        {
-                            activeAngleBoxes[i - 1].Text = Convert.ToString(common.fixedAngleSum[i] - currentAngle[i]);
-                            getFixedAngle();//重获各角度信息
-                            break;
-                        }
-
+                        activeAngleBoxes[i].Text = Convert.ToString(common.originalAngle[i]);//若减出负数，则回溯对于角度的修改
+                        break;
                     }
+                    else
+                    {
 
+                    
+                        if (i < activeAngleBoxes.Count - 1)
+                        {
+                            activeAngleBoxes[i + 1].Text = Convert.ToString(common.fixedAngleSum[i] - Convert.ToInt32(activeAngleBoxes[i].Text));
+                            getFixedAngle();//重获各角度信息
+                            break;
+                        }
+                        if (i == activeAngleBoxes.Count - 1)//末位则对前一项进行调整
+                        {
+                            activeAngleBoxes[i - 1].Text = Convert.ToString(common.fixedAngleSum[i] - Convert.ToInt32(activeAngleBoxes[i].Text));
+                            getFixedAngle();//重获各角度信息
+                            break;
+                        }
+                    }
                 }
+
+            }
 
 
 
@@ -1234,6 +1261,8 @@ namespace winformLearn
         {
             if (checkBox_isAuto360.Checked == true)
             {
+                checkBox_isRelative.Checked = false;//禁止与 相对调整 同时使用
+
                 Config.isAuto360 = true;
                 radioButton_AdjustEnd.Enabled = true;
                 radioButton_AverageAngles.Enabled = true;
