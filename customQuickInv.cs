@@ -1,14 +1,17 @@
 ﻿using System;
-using System.IO;
-using System.Drawing;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
+using System.IO;    //文件互动
+using System.Drawing;   //绘图功能
+using System.Globalization;             //多语言支持
+using System.ComponentModel;            //多语言支持中的函数
+using System.Threading;                 //多语言支持中的函数
+using System.Collections.Generic;   //List类型
+using System.Text.RegularExpressions;       //用于格式转换
 using System.Windows.Forms;
-
+using winformLearn.Properties;
 
 namespace winformLearn
 {
-    public partial class customQuickInv : Form
+    public partial class FormCustomQuickInv : Form
     {
         //工具类
 
@@ -18,7 +21,7 @@ namespace winformLearn
             public static bool isDynamicDrawing = true;     //动态绘制
 
 
-            //public static bool angleWarning_Blue = true;  //没做好，可能不做了
+            //public static bool isWarningBlue = true;  //没做好，可能不做了
             public static bool isWarningRed = true;         //超出360时红线警告
             public static bool isKeepAngleSumFixed = false; //相对调整
 
@@ -60,8 +63,9 @@ namespace winformLearn
 
 
         //槽位选项
-        static void FillBoxList(ComboBox Boxname)
+        static void FillBoxList_CN(ComboBox Boxname)
         {
+
             //Boxname.Items.Add("None");
             Boxname.Items.Add("----大类----");
             Boxname.Items.Add("RIFLE主武器");
@@ -78,6 +82,26 @@ namespace winformLearn
             Boxname.Items.Add("DECOYGRENADE诱饵弹");
             Boxname.Items.Add("MOLOTOV燃烧弹(瓶)");
             return;//结束当前函数
+        }
+        static void FillBoxList_EN(ComboBox Boxname)
+        {
+
+            //Boxname.Items.Add("None");
+            Boxname.Items.Add("[slot names]");
+            Boxname.Items.Add("RIFLE");
+            Boxname.Items.Add("PISTOL");
+            Boxname.Items.Add("KNIFE");
+            Boxname.Items.Add("UTILITY");
+            Boxname.Items.Add("BOOSTS");
+            Boxname.Items.Add("C4");
+            Boxname.Items.Add("GRENADES");
+            Boxname.Items.Add("[individual items]");
+            Boxname.Items.Add("FLASHBANG");
+            Boxname.Items.Add("HEGRENADE");
+            Boxname.Items.Add("SMOKEGRENADE");
+            Boxname.Items.Add("DECOYGRENADE");
+            Boxname.Items.Add("MOLOTOV");
+            return;
         }
         //TrackBar模块
         /// <summary>
@@ -158,7 +182,7 @@ namespace winformLearn
 
 
 
-        public customQuickInv()
+        public FormCustomQuickInv()
         {
             InitializeComponent();
         }
@@ -170,16 +194,16 @@ namespace winformLearn
         //初始加载
         private void Form1_Load(object sender, EventArgs e)
         {
-            FillBoxList(comboBox_slot1);
-            FillBoxList(comboBox_slot2);
-            FillBoxList(comboBox_slot3);
-            FillBoxList(comboBox_slot4);
-            FillBoxList(comboBox_slot5);
-            FillBoxList(comboBox_slot6);
-            FillBoxList(comboBox_slot7);
-            FillBoxList(comboBox_slot8);
-            FillBoxList(comboBox_slot9);
-            FillBoxList(comboBox_slot10);
+            FillBoxList_CN(comboBox_slot1);
+            FillBoxList_CN(comboBox_slot2);
+            FillBoxList_CN(comboBox_slot3);
+            FillBoxList_CN(comboBox_slot4);
+            FillBoxList_CN(comboBox_slot5);
+            FillBoxList_CN(comboBox_slot6);
+            FillBoxList_CN(comboBox_slot7);
+            FillBoxList_CN(comboBox_slot8);
+            FillBoxList_CN(comboBox_slot9);
+            FillBoxList_CN(comboBox_slot10);
 
 
             dynamicDrawing();
@@ -198,14 +222,14 @@ namespace winformLearn
             toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
             //控制区
             toolTip_startAngle.SetToolTip(checkBox_isRelative, "开启时禁用新增/删除槽位 以及 调整槽位最大角度功能" +
-                "\n令当前项角度与下一项角度 之和 不发生变化。若当前为最后一项，则与前一项进行调整" +
-                "\n若调整后，被动调整项数值将小于0，则本次主动调整无效，对于细小调节请手动输入数字");
+                "\n令当前项角度与下一项角度 之和 不发生变化。若当前为最后一项，则与前一项进行调整");
             toolTip_startAngle.SetToolTip(checkBox_isDynamicDrawing, "每当角度、槽位选项改变时，重新绘制轮盘");
             toolTip_startAngle.SetToolTip(radioButton_AdjustEnd, "若角度和未满360，则增加最后槽位的角度，使和为360" +
                 "\n若角度和超过360，仅保留第一个到达360的槽位，舍去其后面的所有槽位（令其角度为0）");
             toolTip_startAngle.SetToolTip(label_MaxAngle, "调整各槽位最大角度" +
                 "\n当相对调整和自动调整360启用时，禁用本功能");
-            toolTip_startAngle.SetToolTip(checkBox_AutoRePaint, "开启本项可防止轮盘图形意外消失，但会减慢绘图速度" +
+            toolTip_startAngle.SetToolTip(checkBox_AutoRePaint, "当界面加载时，重新绘制轮盘" +
+                "\n开启本项可防止轮盘图形意外消失，但会减慢绘图速度" +
                 "\n关闭本项可增加绘图速度，但轮盘图形可能会意外消失");
             toolTip_startAngle.SetToolTip(checkBox_isAuto360, "开启时禁用调整槽位最大角度功能");
             //toolTip_startAngle.SetToolTip(label_startAngle, "0为正北（上方），180为正南（下方），顺时针旋转");
@@ -1543,6 +1567,106 @@ namespace winformLearn
             }
             
         }
+
+
+        private void githubPageToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/DiamondMofeng/csgo-customQuickInv");
+        }
+
+        private void mofengsBlogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://blog.mofengfeng.com");
+            
+        }
+
+
+
+        /*
+
+
+        ////////////////////////////multi-language support////////////////////////////
+        ////https://blog.csdn.net/xinxinsky/article/details/86629011
+        ////// <summary>
+        /// 指定窗体载入语言
+        /// </summary>
+        /// <param name="aForm"></param>
+        /// <param name="aFormType"></param>
+        public static void LoadLanguage(Form aForm)
+        {
+            if (aForm != null)
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(Settings.Default.Language);
+
+                ComponentResourceManager resources = new ComponentResourceManager(aForm.GetType());
+                resources.ApplyResources(aForm, "$this");
+                LoadingControls(aForm, resources);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="aControl"></param>
+        /// <param name="aResources"></param>
+        private static void LoadingControls(Control aControl, ComponentResourceManager aResources)
+        {
+            if (aControl is MenuStrip)
+            {
+                //将资源与控件对应
+                aResources.ApplyResources(aControl, aControl.Name);
+                MenuStrip menu = (MenuStrip)aControl;
+                if (menu.Items.Count > 0)
+                {
+                    foreach (ToolStripMenuItem item in menu.Items)
+                    {
+                        //遍历菜单
+                        Loading(item, aResources);
+                    }
+                }
+            }
+
+            foreach (Control ctrl in aControl.Controls)
+            {
+                aResources.ApplyResources(ctrl, ctrl.Name);
+                LoadingControls(ctrl, aResources);
+            }
+        }
+
+        /// <summary>
+        /// 遍历菜单
+        /// </summary>
+        /// <param name="aItem">菜单项</param>
+        /// <param name="aResources">语言资源</param>
+        private static void Loading(ToolStripMenuItem aItem, ComponentResourceManager aResources)
+        {
+            if (aItem is ToolStripMenuItem)
+            {
+                aResources.ApplyResources(aItem, aItem.Name);
+                if (aItem.DropDownItems.Count > 0)
+                {
+                    foreach (ToolStripMenuItem item in aItem.DropDownItems)
+                    {
+                        Loading(item, aResources);
+                    }
+                }
+            }
+        }
+
+        
+
+
+
+
+        */
+
+
+        private void zhcnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //LoadLanguage(aForm: Form);
+        }
+
+
     }
 }
 

@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="checkBox10.Text" xml:space="preserve">
+    <value>Slot10</value>
+  </data>
+  <data name="checkBox9.Text" xml:space="preserve">
+    <value>Slot9</value>
+  </data>
+  <data name="checkBox8.Text" xml:space="preserve">
+    <value>Slot8</value>
+  </data>
+  <data name="checkBox7.Text" xml:space="preserve">
+    <value>Slot7</value>
+  </data>
+  <data name="checkBox6.Text" xml:space="preserve">
+    <value>Slot6</value>
+  </data>
+  <data name="checkBox3.Text" xml:space="preserve">
+    <value>Slot3</value>
+  </data>
+  <data name="checkBox5.Text" xml:space="preserve">
+    <value>Slot5</value>
+  </data>
+  <data name="checkBox4.Text" xml:space="preserve">
+    <value>Slot4</value>
+  </data>
+  <data name="checkBox2.Text" xml:space="preserve">
+    <value>Slot2</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>Slot1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 83</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="label_startAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 18</value>
+  </data>
+  <data name="label_startAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 12</value>
+  </data>
+  <data name="label_startAngle.Text" xml:space="preserve">
+    <value>StartingAngle</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 742</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 673</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 600</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 527</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 454</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 381</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 157</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 309</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 229</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="checkBox_isRelative.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 14</value>
+  </data>
+  <data name="checkBox_isRelative.Text" xml:space="preserve">
+    <value>LineMode</value>
+  </data>
+  <data name="checkBox_AutoRePaint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 16</value>
+  </data>
+  <data name="checkBox_AutoRePaint.Text" xml:space="preserve">
+    <value>RePaintWhenReloadForm</value>
+  </data>
+  <data name="radioButton_AdjustEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 37</value>
+  </data>
+  <data name="radioButton_AdjustEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 16</value>
+  </data>
+  <data name="radioButton_AdjustEnd.Text" xml:space="preserve">
+    <value>AdjustEND</value>
+  </data>
+  <data name="radioButton_AverageAngles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 59</value>
+  </data>
+  <data name="radioButton_AverageAngles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 16</value>
+  </data>
+  <data name="radioButton_AverageAngles.Text" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="checkBox_isDynamicDrawing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="checkBox_isDynamicDrawing.Text" xml:space="preserve">
+    <value>DynamicDraw</value>
+  </data>
+  <data name="checkBox_isWarningRed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 16</value>
+  </data>
+  <data name="checkBox_isWarningRed.Text" xml:space="preserve">
+    <value>DrawRedWhenOver360</value>
+  </data>
+  <data name="checkBox_isAuto360.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 15</value>
+  </data>
+  <data name="checkBox_isAuto360.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 16</value>
+  </data>
+  <data name="checkBox_isAuto360.Text" xml:space="preserve">
+    <value>AutoAdjustTo360</value>
+  </data>
+  <data name="textBox_MaxAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>461, 12</value>
+  </data>
+  <data name="label_MaxAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 14</value>
+  </data>
+  <data name="label_MaxAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 12</value>
+  </data>
+  <data name="label_MaxAngle.Text" xml:space="preserve">
+    <value>MaxAngleOfEachSlot</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Control Panel</value>
+  </data>
+  <data name="label_debugArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 12</value>
+  </data>
+  <data name="label_debugArea.Text" xml:space="preserve">
+    <value>This panel is used only for debug</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 22</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>ClearCanvas</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>DrawOuter</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>DrawInner</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>565, 123</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Debug Panel</value>
+  </data>
+  <data name="预设方案ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="预设方案ToolStripMenuItem.Text" xml:space="preserve">
+    <value>PreSets</value>
+  </data>
+  <data name="自定义方案1ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案1ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Custom1</value>
+  </data>
+  <data name="自定义方案2ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案2ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Custom2</value>
+  </data>
+  <data name="自定义方案3ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案3ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Custom3</value>
+  </data>
+  <data name="自定义方案4ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案4ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="自定义方案5ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案5ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="自定义方案ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Customs</value>
+  </data>
+  <data name="方案列表ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 21</value>
+  </data>
+  <data name="方案列表ToolStripMenuItem.Text" xml:space="preserve">
+    <value>LoadSolutions</value>
+  </data>
+  <data name="自定义方案1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案1ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Custom1</value>
+  </data>
+  <data name="自定义方案2ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案2ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Custom2</value>
+  </data>
+  <data name="自定义方案3ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案3ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Custom3</value>
+  </data>
+  <data name="自定义方案4ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案4ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Custom4</value>
+  </data>
+  <data name="自定义方案5ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="自定义方案5ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Custom5</value>
+  </data>
+  <data name="保存当前方案ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="保存当前方案ToolStripMenuItem.Text" xml:space="preserve">
+    <value>SaveSolutions</value>
+  </data>
+  <data name="导入ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 21</value>
+  </data>
+  <data name="导入ToolStripMenuItem.Text" xml:space="preserve">
+    <value>ReadFile</value>
+  </data>
+  <data name="ToolStripMenuItem_导出按钮.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 21</value>
+  </data>
+  <data name="ToolStripMenuItem_导出按钮.Text" xml:space="preserve">
+    <value>OutputFile</value>
+  </data>
+  <data name="githubPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="mofengsBlogToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="外部链接ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="外部链接ToolStripMenuItem.Text" xml:space="preserve">
+    <value>External links</value>
+  </data>
+  <data name="关于ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="关于ToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="帮助ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 21</value>
+  </data>
+  <data name="帮助ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="zhcnToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="enusToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="zhcnlanguageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 21</value>
+  </data>
+  <data name="zhcnlanguageToolStripMenuItem.Text" xml:space="preserve">
+    <value>en-US(Language)</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>csgo-QuickInventoryVisuableEditor</value>
+  </data>
+</root>

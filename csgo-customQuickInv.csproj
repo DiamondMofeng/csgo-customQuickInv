@@ -59,6 +59,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="customQuickInv.en.resx">
+      <DependentUpon>customQuickInv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="customQuickInv.resx">
       <DependentUpon>customQuickInv.cs</DependentUpon>
     </EmbeddedResource>

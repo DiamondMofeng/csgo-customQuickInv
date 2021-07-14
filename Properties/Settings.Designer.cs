@@ -25,5 +25,7 @@ namespace winformLearn.Properties
                 return defaultInstance;
             }
         }
+
+        public string Language { get; internal set; }
     }
 }

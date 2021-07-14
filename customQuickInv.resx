@@ -117,10 +117,2713 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitContainer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer1.Panel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 718</value>
+  </data>
+  <data name="checkBox10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="checkBox10.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox10.Text" xml:space="preserve">
+    <value>槽位10</value>
+  </data>
+  <data name="&gt;&gt;checkBox10.Name" xml:space="preserve">
+    <value>checkBox10</value>
+  </data>
+  <data name="&gt;&gt;checkBox10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox10.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBox9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 646</value>
+  </data>
+  <data name="checkBox9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="checkBox9.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox9.Text" xml:space="preserve">
+    <value>槽位9</value>
+  </data>
+  <data name="&gt;&gt;checkBox9.Name" xml:space="preserve">
+    <value>checkBox9</value>
+  </data>
+  <data name="&gt;&gt;checkBox9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox9.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkBox8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 573</value>
+  </data>
+  <data name="checkBox8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="checkBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox8.Text" xml:space="preserve">
+    <value>槽位8</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.Name" xml:space="preserve">
+    <value>checkBox8</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="checkBox7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 500</value>
+  </data>
+  <data name="checkBox7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="checkBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox7.Text" xml:space="preserve">
+    <value>槽位7</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Name" xml:space="preserve">
+    <value>checkBox7</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBox6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 427</value>
+  </data>
+  <data name="checkBox6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="checkBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox6.Text" xml:space="preserve">
+    <value>槽位6</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.Name" xml:space="preserve">
+    <value>checkBox6</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 202</value>
+  </data>
+  <data name="checkBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox3.Text" xml:space="preserve">
+    <value>槽位3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="checkBox5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 354</value>
+  </data>
+  <data name="checkBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="checkBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox5.Text" xml:space="preserve">
+    <value>槽位5</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
+    <value>checkBox5</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 275</value>
+  </data>
+  <data name="checkBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox4.Text" xml:space="preserve">
+    <value>槽位4</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
+    <value>checkBox4</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 130</value>
+  </data>
+  <data name="checkBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox2.Text" xml:space="preserve">
+    <value>槽位2</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
+    <value>checkBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 56</value>
+  </data>
+  <data name="checkBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>槽位1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
+    <value>checkBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="trackBar_angle3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 224</value>
+  </data>
+  <data name="trackBar_angle3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_angle3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 45</value>
+  </data>
+  <data name="trackBar_angle3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle3.Name" xml:space="preserve">
+    <value>trackBar_angle3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle3.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle3.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="textBox_angle10.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox_angle10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 742</value>
+  </data>
+  <data name="textBox_angle10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_angle10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_angle10.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_angle10.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle10.Name" xml:space="preserve">
+    <value>textBox_angle10</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle10.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle10.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="textBox_angle9.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox_angle9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 670</value>
+  </data>
+  <data name="textBox_angle9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_angle9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_angle9.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_angle9.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle9.Name" xml:space="preserve">
+    <value>textBox_angle9</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle9.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle9.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="textBox_angle8.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox_angle8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 597</value>
+  </data>
+  <data name="textBox_angle8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_angle8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_angle8.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_angle8.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle8.Name" xml:space="preserve">
+    <value>textBox_angle8</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle8.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle8.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="comboBox_slot1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 54</value>
+  </data>
+  <data name="comboBox_slot1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboBox_slot1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="comboBox_slot1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_slot1.Text" xml:space="preserve">
+    <value>RIFLE主武器</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot1.Name" xml:space="preserve">
+    <value>comboBox_slot1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="textBox_angle7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 524</value>
+  </data>
+  <data name="textBox_angle7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_angle7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_angle7.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_angle7.Text" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle7.Name" xml:space="preserve">
+    <value>textBox_angle7</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle7.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle7.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="textBox_angle6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 451</value>
+  </data>
+  <data name="textBox_angle6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_angle6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_angle6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_angle6.Text" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle6.Name" xml:space="preserve">
+    <value>textBox_angle6</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle6.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle6.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="textBox_angle3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 226</value>
+  </data>
+  <data name="textBox_angle3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_angle3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_angle3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_angle3.Text" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle3.Name" xml:space="preserve">
+    <value>textBox_angle3</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle3.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle3.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="textBox_angle5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 378</value>
+  </data>
+  <data name="textBox_angle5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_angle5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_angle5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_angle5.Text" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle5.Name" xml:space="preserve">
+    <value>textBox_angle5</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle5.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle5.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 80</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="textBox_angle4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 306</value>
+  </data>
+  <data name="textBox_angle4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_angle4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_angle4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_angle4.Text" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle4.Name" xml:space="preserve">
+    <value>textBox_angle4</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle4.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle4.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="textBox_angle2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 154</value>
+  </data>
+  <data name="textBox_angle2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_angle2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_angle2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_angle2.Text" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle2.Name" xml:space="preserve">
+    <value>textBox_angle2</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle2.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="trackBar_angle10.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="trackBar_angle10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 740</value>
+  </data>
+  <data name="trackBar_angle10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_angle10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 45</value>
+  </data>
+  <data name="trackBar_angle10.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle10.Name" xml:space="preserve">
+    <value>trackBar_angle10</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle10.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle10.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="trackBar_angle9.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="trackBar_angle9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 667</value>
+  </data>
+  <data name="trackBar_angle9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_angle9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 45</value>
+  </data>
+  <data name="trackBar_angle9.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle9.Name" xml:space="preserve">
+    <value>trackBar_angle9</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle9.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle9.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label_startAngle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_startAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 18</value>
+  </data>
+  <data name="label_startAngle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label_startAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="label_startAngle.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_startAngle.Text" xml:space="preserve">
+    <value>起始角度</value>
+  </data>
+  <data name="&gt;&gt;label_startAngle.Name" xml:space="preserve">
+    <value>label_startAngle</value>
+  </data>
+  <data name="&gt;&gt;label_startAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_startAngle.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label_startAngle.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="trackBar_angle8.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="trackBar_angle8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 594</value>
+  </data>
+  <data name="trackBar_angle8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_angle8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 45</value>
+  </data>
+  <data name="trackBar_angle8.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle8.Name" xml:space="preserve">
+    <value>trackBar_angle8</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle8.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle8.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="trackBar_angle7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 522</value>
+  </data>
+  <data name="trackBar_angle7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_angle7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 45</value>
+  </data>
+  <data name="trackBar_angle7.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle7.Name" xml:space="preserve">
+    <value>trackBar_angle7</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle7.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle7.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="comboBox_slot2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 128</value>
+  </data>
+  <data name="comboBox_slot2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboBox_slot2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="comboBox_slot2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_slot2.Text" xml:space="preserve">
+    <value>PISTOL副武器</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot2.Name" xml:space="preserve">
+    <value>comboBox_slot2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot2.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="trackBar_angle6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 449</value>
+  </data>
+  <data name="trackBar_angle6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_angle6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 45</value>
+  </data>
+  <data name="trackBar_angle6.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle6.Name" xml:space="preserve">
+    <value>trackBar_angle6</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle6.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle6.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="trackBar_angle5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 376</value>
+  </data>
+  <data name="trackBar_angle5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_angle5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 45</value>
+  </data>
+  <data name="trackBar_angle5.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle5.Name" xml:space="preserve">
+    <value>trackBar_angle5</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle5.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle5.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="comboBox_slot3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 201</value>
+  </data>
+  <data name="comboBox_slot3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboBox_slot3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="comboBox_slot3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_slot3.Text" xml:space="preserve">
+    <value>KNIFE近战武器(包括电击枪)</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot3.Name" xml:space="preserve">
+    <value>comboBox_slot3</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot3.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot3.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="trackBar_angle4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 303</value>
+  </data>
+  <data name="trackBar_angle4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_angle4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 45</value>
+  </data>
+  <data name="trackBar_angle4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle4.Name" xml:space="preserve">
+    <value>trackBar_angle4</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle4.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle4.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 742</value>
+  </data>
+  <data name="label21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="comboBox_slot4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 274</value>
+  </data>
+  <data name="comboBox_slot4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboBox_slot4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="comboBox_slot4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_slot4.Text" xml:space="preserve">
+    <value>UTILITY头号特训平板</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot4.Name" xml:space="preserve">
+    <value>comboBox_slot4</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot4.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot4.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 670</value>
+  </data>
+  <data name="label19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="trackBar_angle2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 151</value>
+  </data>
+  <data name="trackBar_angle2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_angle2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 45</value>
+  </data>
+  <data name="trackBar_angle2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle2.Name" xml:space="preserve">
+    <value>trackBar_angle2</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle2.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 597</value>
+  </data>
+  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="trackBar_angle1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 78</value>
+  </data>
+  <data name="trackBar_angle1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_angle1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 45</value>
+  </data>
+  <data name="trackBar_angle1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle1.Name" xml:space="preserve">
+    <value>trackBar_angle1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_angle1.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 524</value>
+  </data>
+  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="textBox_startAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 15</value>
+  </data>
+  <data name="textBox_startAngle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_startAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_startAngle.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_startAngle.Text" xml:space="preserve">
+    <value>334</value>
+  </data>
+  <data name="&gt;&gt;textBox_startAngle.Name" xml:space="preserve">
+    <value>textBox_startAngle</value>
+  </data>
+  <data name="&gt;&gt;textBox_startAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_startAngle.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_startAngle.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 451</value>
+  </data>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="trackBar_startAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 10</value>
+  </data>
+  <data name="trackBar_startAngle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_startAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 45</value>
+  </data>
+  <data name="trackBar_startAngle.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_startAngle.Name" xml:space="preserve">
+    <value>trackBar_startAngle</value>
+  </data>
+  <data name="&gt;&gt;trackBar_startAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_startAngle.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_startAngle.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="textBox_angle1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 80</value>
+  </data>
+  <data name="textBox_angle1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_angle1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_angle1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_angle1.Text" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle1.Name" xml:space="preserve">
+    <value>textBox_angle1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;textBox_angle1.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 378</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 154</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 306</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="comboBox_slot10.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="comboBox_slot10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 717</value>
+  </data>
+  <data name="comboBox_slot10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboBox_slot10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="comboBox_slot10.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot10.Name" xml:space="preserve">
+    <value>comboBox_slot10</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot10.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot10.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 226</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>角度</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="comboBox_slot9.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="comboBox_slot9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 644</value>
+  </data>
+  <data name="comboBox_slot9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboBox_slot9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="comboBox_slot9.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot9.Name" xml:space="preserve">
+    <value>comboBox_slot9</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot9.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot9.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="comboBox_slot8.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="comboBox_slot8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 571</value>
+  </data>
+  <data name="comboBox_slot8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboBox_slot8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="comboBox_slot8.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot8.Name" xml:space="preserve">
+    <value>comboBox_slot8</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot8.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot8.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="comboBox_slot7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 498</value>
+  </data>
+  <data name="comboBox_slot7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboBox_slot7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="comboBox_slot7.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_slot7.Text" xml:space="preserve">
+    <value>GRENADES手雷(在区域内分别排列)</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot7.Name" xml:space="preserve">
+    <value>comboBox_slot7</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot7.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot7.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="comboBox_slot6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 426</value>
+  </data>
+  <data name="comboBox_slot6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboBox_slot6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="comboBox_slot6.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_slot6.Text" xml:space="preserve">
+    <value>C4(包括头号特训跳雷)</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot6.Name" xml:space="preserve">
+    <value>comboBox_slot6</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot6.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot6.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="comboBox_slot5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 353</value>
+  </data>
+  <data name="comboBox_slot5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboBox_slot5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="comboBox_slot5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox_slot5.Text" xml:space="preserve">
+    <value>BOOSTS增益道具(防爆盾、治疗针)</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot5.Name" xml:space="preserve">
+    <value>comboBox_slot5</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot5.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_slot5.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="splitContainer2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitContainer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="splitContainer2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="splitContainer2.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="splitContainer2.Panel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 29</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 400</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Name" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="splitContainer2.Panel1MinSize" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="splitContainer2.Panel2.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>573, 149</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Name" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer2.Panel2MinSize" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="splitContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>573, 589</value>
+  </data>
+  <data name="splitContainer2.SplitterDistance" type="System.Int32, mscorlib">
+    <value>437</value>
+  </data>
+  <data name="splitContainer2.SplitterWidth" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="splitContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Name" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 2, 0, 2</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>573, 25</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 614</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>294</value>
+  </data>
+  <data name="splitContainer1.SplitterWidth" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isRelative.Name" xml:space="preserve">
+    <value>checkBox_isRelative</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isRelative.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isRelative.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isRelative.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AutoRePaint.Name" xml:space="preserve">
+    <value>checkBox_AutoRePaint</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AutoRePaint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AutoRePaint.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AutoRePaint.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AdjustEnd.Name" xml:space="preserve">
+    <value>radioButton_AdjustEnd</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AdjustEnd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AdjustEnd.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AdjustEnd.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AverageAngles.Name" xml:space="preserve">
+    <value>radioButton_AverageAngles</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AverageAngles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AverageAngles.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AverageAngles.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isDynamicDrawing.Name" xml:space="preserve">
+    <value>checkBox_isDynamicDrawing</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isDynamicDrawing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isDynamicDrawing.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isDynamicDrawing.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isWarningRed.Name" xml:space="preserve">
+    <value>checkBox_isWarningRed</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isWarningRed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isWarningRed.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isWarningRed.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isAuto360.Name" xml:space="preserve">
+    <value>checkBox_isAuto360</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isAuto360.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isAuto360.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isAuto360.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;trackBar_MaxAngle.Name" xml:space="preserve">
+    <value>trackBar_MaxAngle</value>
+  </data>
+  <data name="&gt;&gt;trackBar_MaxAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_MaxAngle.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_MaxAngle.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textBox_MaxAngle.Name" xml:space="preserve">
+    <value>textBox_MaxAngle</value>
+  </data>
+  <data name="&gt;&gt;textBox_MaxAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_MaxAngle.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;textBox_MaxAngle.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label_MaxAngle.Name" xml:space="preserve">
+    <value>label_MaxAngle</value>
+  </data>
+  <data name="&gt;&gt;label_MaxAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_MaxAngle.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label_MaxAngle.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>565, 123</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>控制区</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBox_isRelative.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_isRelative.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 15</value>
+  </data>
+  <data name="checkBox_isRelative.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox_isRelative.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="checkBox_isRelative.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="checkBox_isRelative.Text" xml:space="preserve">
+    <value>相对调整</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isRelative.Name" xml:space="preserve">
+    <value>checkBox_isRelative</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isRelative.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isRelative.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isRelative.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBox_AutoRePaint.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_AutoRePaint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 98</value>
+  </data>
+  <data name="checkBox_AutoRePaint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 16</value>
+  </data>
+  <data name="checkBox_AutoRePaint.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkBox_AutoRePaint.Text" xml:space="preserve">
+    <value>重载时自动重绘</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AutoRePaint.Name" xml:space="preserve">
+    <value>checkBox_AutoRePaint</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AutoRePaint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AutoRePaint.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AutoRePaint.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioButton_AdjustEnd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_AdjustEnd.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radioButton_AdjustEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 37</value>
+  </data>
+  <data name="radioButton_AdjustEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 16</value>
+  </data>
+  <data name="radioButton_AdjustEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="radioButton_AdjustEnd.Text" xml:space="preserve">
+    <value>末端对齐</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AdjustEnd.Name" xml:space="preserve">
+    <value>radioButton_AdjustEnd</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AdjustEnd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AdjustEnd.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AdjustEnd.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioButton_AverageAngles.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_AverageAngles.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radioButton_AverageAngles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 59</value>
+  </data>
+  <data name="radioButton_AverageAngles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 16</value>
+  </data>
+  <data name="radioButton_AverageAngles.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="radioButton_AverageAngles.Text" xml:space="preserve">
+    <value>均分模式</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AverageAngles.Name" xml:space="preserve">
+    <value>radioButton_AverageAngles</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AverageAngles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AverageAngles.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_AverageAngles.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBox_isDynamicDrawing.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_isDynamicDrawing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 15</value>
+  </data>
+  <data name="checkBox_isDynamicDrawing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox_isDynamicDrawing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="checkBox_isDynamicDrawing.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="checkBox_isDynamicDrawing.Text" xml:space="preserve">
+    <value>实时绘制</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isDynamicDrawing.Name" xml:space="preserve">
+    <value>checkBox_isDynamicDrawing</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isDynamicDrawing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isDynamicDrawing.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isDynamicDrawing.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="checkBox_isWarningRed.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_isWarningRed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 98</value>
+  </data>
+  <data name="checkBox_isWarningRed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox_isWarningRed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="checkBox_isWarningRed.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="checkBox_isWarningRed.Text" xml:space="preserve">
+    <value>超出范围提示红色</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isWarningRed.Name" xml:space="preserve">
+    <value>checkBox_isWarningRed</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isWarningRed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isWarningRed.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isWarningRed.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="checkBox_isAuto360.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_isAuto360.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 15</value>
+  </data>
+  <data name="checkBox_isAuto360.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="checkBox_isAuto360.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 16</value>
+  </data>
+  <data name="checkBox_isAuto360.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="checkBox_isAuto360.Text" xml:space="preserve">
+    <value>自动调整角度和为360</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isAuto360.Name" xml:space="preserve">
+    <value>checkBox_isAuto360</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isAuto360.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isAuto360.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_isAuto360.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="trackBar_MaxAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 37</value>
+  </data>
+  <data name="trackBar_MaxAngle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="trackBar_MaxAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 45</value>
+  </data>
+  <data name="trackBar_MaxAngle.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;trackBar_MaxAngle.Name" xml:space="preserve">
+    <value>trackBar_MaxAngle</value>
+  </data>
+  <data name="&gt;&gt;trackBar_MaxAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar_MaxAngle.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;trackBar_MaxAngle.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="textBox_MaxAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>451, 12</value>
+  </data>
+  <data name="textBox_MaxAngle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBox_MaxAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="textBox_MaxAngle.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_MaxAngle.Text" xml:space="preserve">
+    <value>360</value>
+  </data>
+  <data name="&gt;&gt;textBox_MaxAngle.Name" xml:space="preserve">
+    <value>textBox_MaxAngle</value>
+  </data>
+  <data name="&gt;&gt;textBox_MaxAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_MaxAngle.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;textBox_MaxAngle.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label_MaxAngle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_MaxAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 16</value>
+  </data>
+  <data name="label_MaxAngle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label_MaxAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 12</value>
+  </data>
+  <data name="label_MaxAngle.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_MaxAngle.Text" xml:space="preserve">
+    <value>各槽位最大角度</value>
+  </data>
+  <data name="&gt;&gt;label_MaxAngle.Name" xml:space="preserve">
+    <value>label_MaxAngle</value>
+  </data>
+  <data name="&gt;&gt;label_MaxAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_MaxAngle.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label_MaxAngle.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label_debugArea.Name" xml:space="preserve">
+    <value>label_debugArea</value>
+  </data>
+  <data name="&gt;&gt;label_debugArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_debugArea.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label_debugArea.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>565, 123</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>调试区</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_debugArea.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_debugArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 13</value>
+  </data>
+  <data name="label_debugArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 12</value>
+  </data>
+  <data name="label_debugArea.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label_debugArea.Text" xml:space="preserve">
+    <value>本区域仅供作者调试使用</value>
+  </data>
+  <data name="&gt;&gt;label_debugArea.Name" xml:space="preserve">
+    <value>label_debugArea</value>
+  </data>
+  <data name="&gt;&gt;label_debugArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_debugArea.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label_debugArea.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 47</value>
+  </data>
+  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>清除画布</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 47</value>
+  </data>
+  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>单次绘制</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 47</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>绘制内圆</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="方案列表ToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="方案列表ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 21</value>
+  </data>
+  <data name="方案列表ToolStripMenuItem.Text" xml:space="preserve">
+    <value>加载预设方案</value>
+  </data>
+  <data name="预设方案ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="预设方案ToolStripMenuItem.Text" xml:space="preserve">
+    <value>预设方案</value>
+  </data>
+  <data name="cSGO默认武器轮盘ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 22</value>
+  </data>
+  <data name="cSGO默认武器轮盘ToolStripMenuItem.Text" xml:space="preserve">
+    <value>CSGO默认武器轮盘</value>
+  </data>
+  <data name="pUBG投掷物轮盘ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 22</value>
+  </data>
+  <data name="pUBG投掷物轮盘ToolStripMenuItem.Text" xml:space="preserve">
+    <value>PUBG投掷物轮盘(有C4)</value>
+  </data>
+  <data name="pUBG投掷物轮盘无C4ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 22</value>
+  </data>
+  <data name="pUBG投掷物轮盘无C4ToolStripMenuItem.Text" xml:space="preserve">
+    <value>PUBG投掷物轮盘(无C4)</value>
+  </data>
+  <data name="自定义方案ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="自定义方案ToolStripMenuItem.Text" xml:space="preserve">
+    <value>自定义方案</value>
+  </data>
+  <data name="自定义方案1ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="自定义方案1ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>自定义方案1</value>
+  </data>
+  <data name="自定义方案2ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="自定义方案2ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>自定义方案2</value>
+  </data>
+  <data name="自定义方案3ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="自定义方案3ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>自定义方案3</value>
+  </data>
+  <data name="自定义方案4ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="自定义方案4ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>自定义方案4</value>
+  </data>
+  <data name="自定义方案5ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="自定义方案5ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>自定义方案5</value>
+  </data>
+  <data name="保存当前方案ToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="保存当前方案ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 21</value>
+  </data>
+  <data name="保存当前方案ToolStripMenuItem.Text" xml:space="preserve">
+    <value>保存当前方案至预设</value>
+  </data>
+  <data name="自定义方案1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="自定义方案1ToolStripMenuItem.Text" xml:space="preserve">
+    <value>自定义方案1</value>
+  </data>
+  <data name="自定义方案2ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="自定义方案2ToolStripMenuItem.Text" xml:space="preserve">
+    <value>自定义方案2</value>
+  </data>
+  <data name="自定义方案3ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="自定义方案3ToolStripMenuItem.Text" xml:space="preserve">
+    <value>自定义方案3</value>
+  </data>
+  <data name="自定义方案4ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="自定义方案4ToolStripMenuItem.Text" xml:space="preserve">
+    <value>自定义方案4</value>
+  </data>
+  <data name="自定义方案5ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="自定义方案5ToolStripMenuItem.Text" xml:space="preserve">
+    <value>自定义方案5</value>
+  </data>
+  <data name="导入ToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="导入ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 21</value>
+  </data>
+  <data name="导入ToolStripMenuItem.Text" xml:space="preserve">
+    <value>导入轮盘文件</value>
+  </data>
+  <data name="ToolStripMenuItem_导出按钮.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 21</value>
+  </data>
+  <data name="ToolStripMenuItem_导出按钮.Text" xml:space="preserve">
+    <value>导出轮盘文件</value>
+  </data>
+  <data name="帮助ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="帮助ToolStripMenuItem.Text" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="外部链接ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="外部链接ToolStripMenuItem.Text" xml:space="preserve">
+    <value>外部链接</value>
+  </data>
+  <data name="githubPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
+  </data>
+  <data name="githubPageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Github Page</value>
+  </data>
+  <data name="mofengsBlogToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
+  </data>
+  <data name="mofengsBlogToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mofeng's Blog</value>
+  </data>
+  <data name="关于ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="关于ToolStripMenuItem.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="LanguageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="LanguageToolStripMenuItem.Text" xml:space="preserve">
+    <value>zh-CN(Language)</value>
+  </data>
+  <data name="zhcnToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="zhcnToolStripMenuItem.Text" xml:space="preserve">
+    <value>zh-CN</value>
+  </data>
+  <data name="enusToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="enusToolStripMenuItem.Text" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>56</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>870, 614</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>CSGO武器轮盘可视化编辑器 v0.9.1</value>
+  </data>
+  <data name="&gt;&gt;方案列表ToolStripMenuItem.Name" xml:space="preserve">
+    <value>方案列表ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;方案列表ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;预设方案ToolStripMenuItem.Name" xml:space="preserve">
+    <value>预设方案ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;预设方案ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cSGO默认武器轮盘ToolStripMenuItem.Name" xml:space="preserve">
+    <value>cSGO默认武器轮盘ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;cSGO默认武器轮盘ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pUBG投掷物轮盘ToolStripMenuItem.Name" xml:space="preserve">
+    <value>pUBG投掷物轮盘ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;pUBG投掷物轮盘ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pUBG投掷物轮盘无C4ToolStripMenuItem.Name" xml:space="preserve">
+    <value>pUBG投掷物轮盘无C4ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;pUBG投掷物轮盘无C4ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案ToolStripMenuItem.Name" xml:space="preserve">
+    <value>自定义方案ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;自定义方案ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案1ToolStripMenuItem1.Name" xml:space="preserve">
+    <value>自定义方案1ToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;自定义方案1ToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案2ToolStripMenuItem1.Name" xml:space="preserve">
+    <value>自定义方案2ToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;自定义方案2ToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案3ToolStripMenuItem1.Name" xml:space="preserve">
+    <value>自定义方案3ToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;自定义方案3ToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案4ToolStripMenuItem1.Name" xml:space="preserve">
+    <value>自定义方案4ToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;自定义方案4ToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案5ToolStripMenuItem1.Name" xml:space="preserve">
+    <value>自定义方案5ToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;自定义方案5ToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;保存当前方案ToolStripMenuItem.Name" xml:space="preserve">
+    <value>保存当前方案ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;保存当前方案ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案1ToolStripMenuItem.Name" xml:space="preserve">
+    <value>自定义方案1ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;自定义方案1ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案2ToolStripMenuItem.Name" xml:space="preserve">
+    <value>自定义方案2ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;自定义方案2ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案3ToolStripMenuItem.Name" xml:space="preserve">
+    <value>自定义方案3ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;自定义方案3ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案4ToolStripMenuItem.Name" xml:space="preserve">
+    <value>自定义方案4ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;自定义方案4ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;自定义方案5ToolStripMenuItem.Name" xml:space="preserve">
+    <value>自定义方案5ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;自定义方案5ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;导入ToolStripMenuItem.Name" xml:space="preserve">
+    <value>导入ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;导入ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_导出按钮.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_导出按钮</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_导出按钮.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;帮助ToolStripMenuItem.Name" xml:space="preserve">
+    <value>帮助ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;帮助ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;外部链接ToolStripMenuItem.Name" xml:space="preserve">
+    <value>外部链接ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;外部链接ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;githubPageToolStripMenuItem.Name" xml:space="preserve">
+    <value>githubPageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;githubPageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mofengsBlogToolStripMenuItem.Name" xml:space="preserve">
+    <value>mofengsBlogToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;mofengsBlogToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;关于ToolStripMenuItem.Name" xml:space="preserve">
+    <value>关于ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;关于ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LanguageToolStripMenuItem.Name" xml:space="preserve">
+    <value>LanguageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;LanguageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;zhcnToolStripMenuItem.Name" xml:space="preserve">
+    <value>zhcnToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;zhcnToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enusToolStripMenuItem.Name" xml:space="preserve">
+    <value>enusToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;enusToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormCustomQuickInv</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
